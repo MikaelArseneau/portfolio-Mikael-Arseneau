@@ -32,7 +32,10 @@ nav .nav-link:hover {
 }
 
 nav {
-    background-color: var(--background);
+    background-color: none;
+    position: sticky;
+    top: 0;
+
 }
 
 nav .navbar-toggler {
@@ -49,7 +52,7 @@ nav .navbar-toggler:focus {
 
 
 main {
-    background-color: var(--background);
+    background-image: url(../media/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text);
@@ -83,7 +86,6 @@ main {
 }
 
 .accueil {
-    background-image: url('./media/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text);
@@ -108,4 +110,43 @@ main {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.container-projets {
+    margin-top: 5rem;
+    height: auto;
+    position: relative;
+
+}
+
+.categories {
+
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    text-decoration: underline;
+}
+
+
+.categories:focus {
+    outline: none;
+}
+
+.web:hover {
+    color: var(--text);
+    cursor: pointer;
+}
+
+.monatge:hover {
+    color: var(--text);
+    cursor: pointer;
+}
+
+.troisDimension:hover {
+    color: var(--text);
+    cursor: pointer;
 }
