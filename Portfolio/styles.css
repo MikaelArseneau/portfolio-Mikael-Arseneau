@@ -106,22 +106,25 @@ main {
     padding: 100px;
 }
 
-.info {
+.information {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    object-fit: contain;
+    font-size: 1.2rem;
 }
 
 .container-projets {
     margin-top: 5rem;
     height: auto;
     position: relative;
+    width: 65%;
 
 }
 
 .categories {
 
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     color: var(--secondary);
     display: flex;
@@ -129,6 +132,8 @@ main {
     justify-content: center;
     gap: 2rem;
     text-decoration: underline;
+    text-underline-offset: 8px;
+
 }
 
 
@@ -139,14 +144,41 @@ main {
 .web:hover {
     color: var(--text);
     cursor: pointer;
+    transition: 1s all ease;
 }
 
 .monatge:hover {
     color: var(--text);
     cursor: pointer;
+    transition: 1s all ease;
 }
 
 .troisDimension:hover {
     color: var(--text);
     cursor: pointer;
+    transition: 1s all ease;
+}
+
+.all-projet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+
+}
+
+.card {
+    background-color: var(--secondary);
+    border: none;
+    height: 30px;
+    transition: scale 0.5s ease;
+}
+
+.card:hover {
+    scale: 1.05;
+    cursor: pointer;
+    flex-grow: 4;
 }
