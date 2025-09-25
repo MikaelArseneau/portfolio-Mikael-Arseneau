@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Prompt", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -38,12 +38,15 @@ nav {
 nav .navbar-toggler {
     border: none;
     color: var(--text);
+    background-color: var(--text);
 }
 
 nav .navbar-toggler:focus {
     box-shadow: none;
-    background-color: var(--text);
+    background-color: var(--primary);
 }
+
+
 
 main {
     background-color: var(--background);
@@ -51,7 +54,7 @@ main {
     background-repeat: no-repeat;
     color: var(--text);
     top: 0;
-    width: 100%;
+    width: 100vw;
     position: absolute;
 }
 
@@ -69,7 +72,7 @@ main {
     grid-row: span 2 / span 2;
     grid-row-start: 2;
     font-size: 5rem;
-    text-align: left;
+    text-align: right;
 
 }
 
@@ -77,4 +80,32 @@ main {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 4;
+}
+
+.accueil {
+    background-image: url('./media/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text);
+    top: 0;
+    width: 100vw;
+    position: absolute;
+}
+
+.container-propos {
+    margin-top: 2rem;
+    height: 300px;
+    width: 65%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.info {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
