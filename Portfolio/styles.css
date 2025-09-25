@@ -1,0 +1,80 @@
+:root {
+    --text: #f0ede4;
+    --background: #2d2d2a;
+    --primary: #55868c;
+    --secondary: #ed6a5a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav .navbar-brand {
+    color: var(--primary);
+}
+
+nav .navbar-brand:hover {
+    color: var(--text);
+}
+
+nav .nav-link {
+    color: var(--text);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+nav .nav-link:hover {
+    color: var(--primary);
+}
+
+nav {
+    background-color: var(--background);
+}
+
+nav .navbar-toggler {
+    border: none;
+    color: var(--text);
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+    background-color: var(--text);
+}
+
+main {
+    background-color: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text);
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    gap: 1rem 0.5rem;
+    top: 0;
+}
+
+.titre {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+    font-size: 5rem;
+    text-align: left;
+
+}
+
+.info {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
