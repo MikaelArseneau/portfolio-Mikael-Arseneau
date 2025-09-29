@@ -35,7 +35,7 @@ nav {
     background-color: none;
     position: sticky;
     top: 0;
-
+    
 }
 
 nav .navbar-toggler {
@@ -103,7 +103,7 @@ main {
     transform: translateX(-50%);
     background-color: var(--primary);
     border-radius: 10px;
-    padding: 100px;
+    padding: 50px;
 }
 
 .information {
@@ -111,35 +111,33 @@ main {
     top: 50%;
     transform: translateY(-50%);
     object-fit: contain;
-    font-size: 1.2rem;
+    font-size: 1em;
 }
 
 .container-projets {
     margin-top: 5rem;
     height: auto;
     position: relative;
-    width: 65%;
+    width: 100%;
 
 }
 
 .categories {
 
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--secondary);
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-
+     /*text-decoration: underline;
+    text-underline-offset: 16px;
+*/
 }
 
 
-.categories:focus {
-    outline: none;
-}
+
 
 .web:hover {
     color: var(--text);
@@ -167,18 +165,30 @@ main {
     justify-content: center;
     position: relative;
     flex-grow: 1;
-
+align-items: center;
 }
 
 .card {
     background-color: var(--secondary);
     border: none;
-    height: 30px;
-    transition: scale 0.5s ease;
+    height: 50%;
+    transition: scale 0.5s ease-in-out,filter 0.5s ease-in-out;
+ 
+    width: 25%;
 }
 
 .card:hover {
     scale: 1.05;
     cursor: pointer;
-    flex-grow: 4;
+    
+filter: drop-shadow(5px 5px 5px var(--secondary));
+}
+
+.categories .active {
+background-color: var(--primary);
+border-radius: 10px;
+border-width: 1px;
+text-decoration: none;
+padding: 5px;
+color: var(--text);
 }
