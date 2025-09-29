@@ -12,7 +12,7 @@
     font-family: "Prompt", sans-serif;
     scroll-behavior: smooth;
 }
-
+/* header */
 nav .navbar-brand {
     color: var(--primary);
 }
@@ -22,7 +22,7 @@ nav .navbar-brand:hover {
 }
 
 nav .nav-link {
-    color: var(--text);
+    color: var(--background);
     font-size: 1.2rem;
     margin: 0 1rem;
 }
@@ -32,7 +32,7 @@ nav .nav-link:hover {
 }
 
 nav {
-    background-color: none;
+    background-color: var(--text);
     position: sticky;
     top: 0;
     
@@ -40,7 +40,7 @@ nav {
 
 nav .navbar-toggler {
     border: none;
-    color: var(--text);
+    color: var(--background);
     background-color: var(--text);
 }
 
@@ -124,35 +124,35 @@ main {
 
 .categories {
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: var(--secondary);
+    color: var(--text);
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-     /*text-decoration: underline;
-    text-underline-offset: 16px;
-*/
+     text-decoration: underline;
+    text-underline-offset: 10px;
+
 }
 
 
 
 
 .web:hover {
-    color: var(--text);
+    color: var(--secondary);
     cursor: pointer;
     transition: 1s all ease;
 }
 
 .monatge:hover {
-    color: var(--text);
+    color: var(--secondary);
     cursor: pointer;
     transition: 1s all ease;
 }
 
 .troisDimension:hover {
-    color: var(--text);
+    color: var(--secondary);
     cursor: pointer;
     transition: 1s all ease;
 }
@@ -165,30 +165,36 @@ main {
     justify-content: center;
     position: relative;
     flex-grow: 1;
-align-items: center;
+    align-items: center;
 }
 
 .card {
-    background-color: var(--secondary);
-    border: none;
-    height: 50%;
-    transition: scale 0.5s ease-in-out,filter 0.5s ease-in-out;
- 
+    height: 300px;
+    ;
     width: 25%;
 }
 
-.card:hover {
+ .card:hover .card-img{
     scale: 1.05;
     cursor: pointer;
-    
-filter: drop-shadow(5px 5px 5px var(--secondary));
+filter: grayscale(100%) blur(5px);
+transition: scale 0.5s ease-in-out,filter 0.1s ease-in-out,opacity 0.5s ease-in-out
 }
 
-.categories .active {
-background-color: var(--primary);
-border-radius: 10px;
-border-width: 1px;
-text-decoration: none;
-padding: 5px;
-color: var(--text);
+.card .card-title{
+    color: aqua;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 0;
+
+}
+.card:hover .card-title{
+    color: var(--primary);
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    font-size: 2em;
+    text-transform: uppercase;
 }
