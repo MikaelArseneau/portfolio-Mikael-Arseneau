@@ -52,7 +52,7 @@ nav .navbar-toggler:focus {
 
 
 main {
-    background-image: url(../media/background.png);
+    background-image: url(./media/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text);
@@ -177,7 +177,7 @@ main {
  .card:hover .card-img{
     scale: 1.05;
     cursor: pointer;
-filter: grayscale(100%) blur(5px);
+filter: grayscale(100%) blur(10px);
 transition: scale 0.5s ease-in-out,filter 0.1s ease-in-out,opacity 0.5s ease-in-out
 }
 
@@ -190,11 +190,13 @@ transition: scale 0.5s ease-in-out,filter 0.1s ease-in-out,opacity 0.5s ease-in-
 
 }
 .card:hover .card-title{
-    color: var(--primary);
+    color: var(--secondary);
     position: relative;
     top:50%;
     transform: translateY(-50%);
     opacity: 1;
     font-size: 2em;
     text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 5px 5px 5px var(--background);
 }
