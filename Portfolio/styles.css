@@ -12,6 +12,7 @@
     font-family: "Prompt", sans-serif;
     scroll-behavior: smooth;
 }
+
 /* header */
 nav .navbar-brand {
     color: var(--primary);
@@ -35,7 +36,7 @@ nav {
     background-color: var(--text);
     position: sticky;
     top: 0;
-    
+
 }
 
 nav .navbar-toggler {
@@ -131,7 +132,7 @@ main {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-     text-decoration: underline;
+    text-decoration: underline;
     text-underline-offset: 10px;
 
 }
@@ -168,35 +169,63 @@ main {
     align-items: center;
 }
 
+.card-img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
 .card {
     height: 300px;
-    ;
-    width: 25%;
-}
-
- .card:hover .card-img{
-    scale: 1.05;
-    cursor: pointer;
-filter: grayscale(100%) blur(10px);
-transition: scale 0.5s ease-in-out,filter 0.1s ease-in-out,opacity 0.5s ease-in-out
-}
-
-.card .card-title{
-    color: aqua;
+    width: 300px;
     position: relative;
-    top:50%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .card-img {
+    scale: 1.1;
+    filter: brightness(50%);
+    opacity: 1;
+    transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card .card-title {
+
+    position: relative;
+    top: 50%;
     transform: translateY(-50%);
     opacity: 0;
 
 }
-.card:hover .card-title{
+
+.card:hover .card-title {
     color: var(--secondary);
     position: relative;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     opacity: 1;
     font-size: 2em;
     text-transform: uppercase;
     cursor: pointer;
     text-shadow: 5px 5px 5px var(--background);
+    object-fit: contain;
+}
+
+footer {
+    background-color: var(--text);
+    color: var(--background);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    margin-top: 2rem;
 }

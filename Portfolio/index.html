@@ -2,110 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </head>
 <header>
 
-    <nav class="navbar navbar-expand-md  fixed-top py-1 px-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto ">
-                    <a class="nav-link " href="#propos">À propos</a>
-                    <a class="nav-link" href="#projects">Projets</a>
-                    <a class="nav-link" href="#contact">Contact</a>
-                </div>
-            </div>
+  <nav class="navbar navbar-expand-md  fixed-top py-1 px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto ">
+          <a class="nav-link " href="#propos">À propos</a>
+          <a class="nav-link" href="#projects">Projets</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </header>
 <main>
 
-    <section id="accueil" class="container my-5">
-        <div class="parent">
-            <h1 class="titre">Mikael Arseneau</h1>
-            <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+  <section id="accueil" class="container my-5">
+    <div class="parent">
+      <h1 class="titre">Mikael Arseneau</h1>
+      <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+    </div>
+
+  </section>
+  <section id="propos" class="container my-5">
+    <h2 class="mb-5 text-center">À propos de moi</h2>
+    <div class="mt-5 container-propos">
+      <p class="information text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+
+
+  </section>
+
+  <section id="projects" class="container my-5 container-projets">
+    <h2 class="mt-5 text-center">Projets</h2>
+    <div class=" text-center categories mt-5">
+      <p class="web">Production web</p>
+      <p class="monatge">Montage visuelle</p>
+      <p class="troisDimension">3D</p>
+    </div>
+    <div class="all-projet">
+      <div class="card text-bg-dark">
+        <img src="./media/metrage.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-center">Métrage</h5>
+
         </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="./media/coeur_de_la_montagne.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-center">Coeur de la montage</h5>
 
-    </section>
-    <section id="propos" class="container my-5">
-        <h2 class="mb-5 text-center">À propos de moi</h2>
-        <div class="mt-5 container-propos">
-            <p class="information text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis</p>
         </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="./media/dix10.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-center">DIX 10</h5>
 
-
-    </section>
-
-    <section id="projects" class="container my-5 container-projets">
-        <h2 class="mt-5 text-center">Projets</h2>
-        <div class=" text-center categories mt-5">
-            <p class="web">Production web</p>
-            <p class="monatge">Montage visuelle</p>
-            <p class="troisDimension">3D</p>
         </div>
-        <div class="all-projet">
-            <div class="card text-bg-dark">
-                <img src="./media/metrage.png" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title text-center">Métrage</h5>
-                  
-                </div>
-              </div>
-              <div class="card text-bg-dark">
-                <img src="./media/metrage.png" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title text-center">Métrage</h5>
-                  
-                </div>
-              </div><div class="card text-bg-dark">
-                <img src="./media/metrage.png" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title text-center">Métrage</h5>
-                  
-                </div>
-              </div><div class="card text-bg-dark">
-                <img src="./media/metrage.png" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title text-center">Métrage</h5>
-                  
-                </div>
-              </div><div class="card text-bg-dark">
-                <img src="./media/metrage.png" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title text-center">Métrage</h5>
-                  
-                </div>
-              </div><div class="card text-bg-dark">
-                <img src="./media/metrage.png" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title text-center">Métrage</h5>
-                  
-                </div>
-              </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="./media/terminus.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-center">Terminus</h5>
+
         </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="./media/chasseur.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-center">Chasseur de crane</h5>
 
-    </section>
+        </div>
+      </div>
+      <div class="card text-bg-dark">
+        <img src="./media/montee.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-center">La Montée</h5>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="interets" class="container my-5">
+    <h2 class="mb-5 text-center">Centres d'intérêts</h2>
+
+
+  </section>
+
+  <footer>
 
 
 
+
+  </footer>
 </main>
 
 <body>
