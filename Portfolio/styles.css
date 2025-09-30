@@ -255,9 +255,37 @@ width: 100%;
 
 
 
+.container-contact{
+display: flex;
+flex-direction: row;
+width: 60%;
+align-items: center;
+background-color: var(--text);
+color: var(--background);
+border-radius: 10%;
+height: 600px;
+padding: 3em;
+flex-wrap: nowrap;
+gap: 2em;
+}
 
+.container-contact .texte_contact{
+   text-align: left;
+   flex-grow: 1;
+}
+.container-contact .cv{
+    background-color: var(--primary);
+    color: var(--text);
+  text-transform: uppercase;
+   align-self: center; 
+   flex-grow: 2;
+}
 
-
+.container-contact .cv:hover{
+    background-color: var(--secondary);
+    color: var(--text);
+  
+}
 .container-footer{
 width: 100%;
 display: flex;
