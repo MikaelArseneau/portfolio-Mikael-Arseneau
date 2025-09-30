@@ -190,7 +190,7 @@ main {
 }
 
 .card:hover .card-img {
-    scale: 1.1;
+     scale: 1.1;
     filter: brightness(50%);
     opacity: 1;
     transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
@@ -218,7 +218,59 @@ main {
     text-shadow: 5px 5px 5px var(--background);
     object-fit: contain;
 }
+.container-interets{
+width: 100%;
+}
 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2em;
+}
+    
+.div1 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div3 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+        
+
+
+
+
+
+
+
+.container-footer{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+gap:3em;
+
+}
+
+svg:hover{
+fill: var(--secondary);
+cursor: pointer;
+}
 footer {
     background-color: var(--text);
     color: var(--background);
