@@ -258,27 +258,29 @@ width: 100%;
 .container-contact{
 display: flex;
 flex-direction: row;
-width: 60%;
+width: 30%;
 align-items: center;
 background-color: var(--text);
 color: var(--background);
 border-radius: 10%;
-height: 600px;
+height: 30em;
 padding: 3em;
 flex-wrap: nowrap;
 gap: 2em;
+justify-content: space-evenly;
 }
 
 .container-contact .texte_contact{
    text-align: left;
-   flex-grow: 1;
+   
+   width: 50%;
 }
 .container-contact .cv{
     background-color: var(--primary);
     color: var(--text);
   text-transform: uppercase;
    align-self: center; 
-   flex-grow: 2;
+   
 }
 
 .container-contact .cv:hover{
@@ -309,3 +311,11 @@ footer {
     width: 100vw;
     margin-top: 2rem;
 }
+
+
+
+@media only screen and (max-width: 1350px) {
+    .container-contact {
+     flex-direction: column;
+    }
+   }
