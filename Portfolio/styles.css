@@ -190,7 +190,7 @@ main {
 }
 
 .card:hover .card-img {
-     scale: 1.1;
+    scale: 1.1;
     filter: brightness(50%);
     opacity: 1;
     transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
@@ -218,8 +218,9 @@ main {
     text-shadow: 5px 5px 5px var(--background);
     object-fit: contain;
 }
-.container-interets{
-width: 100%;
+
+.container-interets {
+    width: 100%;
 }
 
 .parent {
@@ -228,7 +229,7 @@ width: 100%;
     grid-template-rows: repeat(6, 1fr);
     gap: 2em;
 }
-    
+
 .div1 {
     grid-row: span 3 / span 3;
     grid-column-start: 2;
@@ -250,57 +251,60 @@ width: 100%;
     grid-column-start: 3;
     grid-row-start: 2;
 }
-        
 
 
 
 
-.container-contact{
-display: flex;
-flex-direction: row;
-width: 30%;
-align-items: center;
-background-color: var(--text);
-color: var(--background);
-border-radius: 10%;
-height: 30em;
-padding: 3em;
-flex-wrap: nowrap;
-gap: 2em;
-justify-content: space-evenly;
+
+.container-contact {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    background-color: var(--text);
+    color: var(--background);
+    border-radius: 10%;
+    height: 30em;
+    padding: 3em;
+    flex-wrap: nowrap;
+    gap: 2em;
+    justify-content: space-evenly;
 }
 
-.container-contact .texte_contact{
-   text-align: left;
-   
-   width: 50%;
+.container-contact .texte_contact {
+    text-align: left;
+
+    width: 50%;
 }
-.container-contact .cv{
+
+.container-contact .cv {
     background-color: var(--primary);
     color: var(--text);
-  text-transform: uppercase;
-   align-self: center; 
-   
+    text-transform: uppercase;
+    align-self: center;
+
 }
 
-.container-contact .cv:hover{
+.container-contact .cv:hover {
     background-color: var(--secondary);
     color: var(--text);
-  
-}
-.container-footer{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-gap:3em;
 
 }
 
-svg:hover{
-fill: var(--secondary);
-cursor: pointer;
+.container-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+
 }
+
+svg:hover {
+    fill: var(--secondary);
+    cursor: pointer;
+}
+
 footer {
     background-color: var(--text);
     color: var(--background);
@@ -314,8 +318,15 @@ footer {
 
 
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1200px) {
     .container-contact {
-     flex-direction: column;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        padding: 4em;
+        gap: 1em;
+        justify-content: center;
+        text-align: center;
+
     }
-   }
+}
