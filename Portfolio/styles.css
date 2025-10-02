@@ -21,6 +21,11 @@
 /* header */
 nav .navbar-brand {
     color: var(--primary);
+    font-size: 1.5rem;
+    font-family: "Thunder", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
 }
 
 nav .navbar-brand:hover {
@@ -31,6 +36,10 @@ nav .nav-link {
     color: var(--background);
     font-size: 1.2rem;
     margin: 0 1rem;
+    text-transform: uppercase;
+    font-family: "Thunder", sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.25rem;
 }
 
 nav .nav-link:hover {
