@@ -86,12 +86,21 @@ main {
     font-family: "Thunder", sans-serif;
     font-weight: bolder;
     margin-bottom: 1rem;
-
+    mix-blend-mode: difference;
 }
 
 .info {}
 
+.photo_moi {}
 
+.impo {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: var(--text);
+    mix-blend-mode: difference;
+    font-family: "Thunder", sans-serif;
+    margin-bottom: 1rem;
+}
 
 .container-propos {
     margin-top: 2rem;
@@ -103,6 +112,12 @@ main {
     background-color: var(--primary);
     border-radius: 10px;
     padding: 50px;
+
+}
+
+.container-propos:hover {
+    box-shadow: 5px 5px 15px var(--background);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .information {
@@ -262,19 +277,31 @@ main {
     gap: 2em;
 }
 
-.container-contact .cv {
-    background-color: transparent;
+.display_logiciel {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.logiciel {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    font-family: "Thunder", sans-serif;
     color: var(--text);
-    text-transform: uppercase;
-    padding-right: 1em;
-    padding-left: 1em;
-    font-size: 3em;
-    border-radius: 30px;
-    border-width: 0.1em;
-    border-color: #ed6a5a;
+    mix-blend-mode: difference;
+    font-size: 2em;
+}
 
-
-
+.logiciel:hover {
+    color: var(--secondary);
+    cursor: pointer;
+    transition: 1s all ease;
 }
 
 .container-contact .cv:hover {
