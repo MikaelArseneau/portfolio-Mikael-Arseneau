@@ -5,6 +5,11 @@
     --secondary: #ed6a5a;
 }
 
+@font-face {
+    font-family: "Thunder";
+    src: url(./media/font/Thunder-VF.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -62,47 +67,40 @@ main {
     position: absolute;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+.accueil-container {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     gap: 1rem 0.5rem;
-    top: 0;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
 }
 
 .titre {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 2;
-    font-size: 5rem;
-    text-align: right;
-
-}
-
-.info {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 4;
-}
-
-.accueil {
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-size: 7rem;
+    text-align: left;
+    text-transform: uppercase;
     color: var(--text);
-    top: 0;
-    width: 100vw;
-    position: absolute;
+    text-shadow: 3px 3px 3px var(--background);
+    font-family: "Thunder", sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+
 }
+
+.info {}
+
+
 
 .container-propos {
     margin-top: 2rem;
-   /* height: 300px;*/
+    /* height: 300px;*/
     width: 65%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-     background-color: var(--primary);
+    background-color: var(--primary);
     border-radius: 10px;
     padding: 50px;
 }
@@ -250,12 +248,14 @@ main {
     grid-column-start: 3;
     grid-row-start: 2;
 }
-.container-contact  {
-width: 50vw;   
-margin: auto;
+
+.container-contact {
+    width: 50vw;
+    margin: auto;
 
 }
-.information_display{
+
+.information_display {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,11 +272,11 @@ margin: auto;
     border-radius: 30px;
     border-width: 0.1em;
     border-color: #ed6a5a;
-    
-    
-  
+
+
+
 }
- 
+
 .container-contact .cv:hover {
     background-color: var(--secondary);
     color: var(--text);
@@ -312,7 +312,7 @@ footer {
 
 
 @media only screen and (max-width: 1200px) {
-    
+
     .container-contact .texte_contact {
         width: 100%;
         text-align: center;
