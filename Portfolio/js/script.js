@@ -1,36 +1,32 @@
 gsap.registerPlugin(ScrollTrigger);
 
+document.addEventListener('DOMContentLoaded', () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                activeCat: 'tous',
+                categories: [
+                    { id: 'tous', name: 'Tous' },
+                    { id: 'web', name: 'Production web' },
+                    { id: 'montage', name: 'Montage visuelle' },
+                    { id: 'troisDimension', name: '3D' }
+                ],
+                projects: [
+                    { id: 1, categories: 'web', title: 'Métrage', img: './media/metrage.png' },
+                    { id: 2, categories: 'web', title: 'DIX 10', img: './media/dix10.png' },
+                    { id: 3, categories: 'montage', title: 'Coeur de la montage', img: './media/coeur_de_la_montagne.jpg' },
+                    { id: 4, categories: 'montage', title: 'Terminus', img: './media/terminus.jpg' },
+                    { id: 5, categories: 'troisDimension', title: 'Chasseur de crane', img: './media/chasseur.png' },
+                    { id: 6, categories: 'montage', title: 'La Montée', img: './media/montee.png' }
+                ]
+            };
+        },
+        methods: {
+            setActive(categories) {
+                this.activeCat = categories;
+            }
+        }
+    });
 
-const listItems = [
-    {
-        title: "Artificial Intelligence and Machine Learning",
-        description:
-            "AI and ML enhance efficiency and personalization, transforming industries with better automation, data analysis, and predictive capabilities.",
-        imageUrl: "images/ai.jpg",
-    },
-    {
-        title: "Quantum Computing",
-        description:
-            "Quantum Computing solves complex problems quickly, impacting cryptography, materials science, and drug discovery with unprecedented computational power.",
-        imageUrl: "images/quantum-computing.jpg",
-    },
-    {
-        title: "5G and Beyond",
-        description:
-            "5G networks revolutionize connectivity, offering faster speeds, lower latency, and enabling IoT, smart cities, and advanced virtual experiences.",
-        imageUrl: "images/5g.jpg",
-    },
-];
-
-const customList = document.querySelector(".custom-list");
-
-listItems.forEach((item, index) => {
-    const number = (index + 1).toString().padStart(2, "0");
-    customList.innerHTML += `<div class="list-item">
-        <div class="number" style="background-image: url(${item.imageUrl})">${number}</div>
-        <div class="info">
-          <h3>${item.title}</h3>
-          <p>${item.description}</p>
-        </div>
-      </div>`;
+    app.mount('#app');
 });
