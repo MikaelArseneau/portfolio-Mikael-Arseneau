@@ -291,34 +291,9 @@ main {
     width: 100%;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 2em;
-}
 
-.div1 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
 
-.div2 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 3;
-}
 
-.div3 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.div4 {
-    grid-column-start: 3;
-    grid-row-start: 2;
-}
 
 .container-contact {
     width: 50vw;
@@ -438,7 +413,37 @@ footer {
     margin-top: 2rem;
 }
 
+.image-container {
+    display: flex;
+    /* Alignement horizontal */
+    gap: 20px;
+    /* Espacement entre les images */
+    overflow: hidden;
+    /* Pour cacher le débordement */
+    width: 100%;
+}
 
+.image-projet img {
+    width: 400px;
+    /* Taille de chaque image */
+    height: auto;
+}
+
+.image-projet:hover {
+    transform: scale(1.05);
+}
+
+.container-propos-projet {
+    margin-top: -2rem;
+    width: 65%;
+    position: relative;
+    border-radius: 10px;
+    padding: 64px;
+    box-shadow: 5px 5px 15px 5px var(--background);
+    display: flex;
+    flex-direction: column;
+
+}
 
 @media only screen and (max-width: 1000px) {
 
