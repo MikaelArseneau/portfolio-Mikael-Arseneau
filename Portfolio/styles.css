@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Thunder";
-    src: url(./media/font/Thunder-VF.ttf) format("truetype");
+    src: url(./media/font/Outfit-VariableFont_wght.ttf) format("truetype");
 }
 
 * {
@@ -18,14 +18,16 @@
     scroll-behavior: smooth;
 }
 
+
+
 /* header */
 nav .navbar-brand {
-    color: var(--primary);
-    font-size: 1.5rem;
+    color: var(--secondary);
+    font-size: 1rem;
     font-family: "Thunder", sans-serif;
     font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
+
+    letter-spacing: 0.1rem;
 }
 
 nav .navbar-brand:hover {
@@ -36,21 +38,22 @@ nav .nav-link {
     color: var(--background);
     font-size: 1.2rem;
     margin: 0 1rem;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: "Thunder", sans-serif;
     font-weight: bolder;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.1rem;
 }
 
 nav .nav-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 nav {
-    background-color: var(--text);
+    background-color: #D9CCB6;
     position: sticky;
     top: 0;
 
+    z-index: 100;
 }
 
 nav .navbar-toggler {
@@ -80,25 +83,36 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    gap: 1rem 0.5rem;
+    gap: 1rem 1rem;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    align-items: left;
+
 }
 
 .titre {
-    font-size: 7rem;
+    font-size: 10rem;
     text-align: left;
-    text-transform: uppercase;
     color: var(--text);
     text-shadow: 3px 3px 3px var(--background);
     font-family: "Thunder", sans-serif;
     font-weight: bolder;
     margin-bottom: 1rem;
     mix-blend-mode: difference;
+    letter-spacing: -8px;
 }
 
-.info {}
+.info {
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--text);
+    align-self: flex-start;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    font-family: "Thunder", sans-serif;
+
+}
 
 .photo_moi {}
 
@@ -109,6 +123,9 @@ main {
     mix-blend-mode: difference;
     font-family: "Thunder", sans-serif;
     margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 3px 3px 3px var(--background);
+
 }
 
 .container-propos {
@@ -118,22 +135,19 @@ main {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--primary);
     border-radius: 10px;
-    padding: 50px;
+    padding: 64px;
+    box-shadow: 5px 5px 15px 5px var(--background);
 
 }
 
-.container-propos:hover {
-    box-shadow: 5px 5px 15px var(--background);
-    transition: box-shadow 0.5s ease-in-out;
-}
 
 .information {
     text-align: left;
     position: relative;
     object-fit: contain;
     font-size: 1em;
+    font-family: "Thunder", sans-serif;
 }
 
 .container-projets {
@@ -142,6 +156,11 @@ main {
     position: relative;
     width: 100%;
 
+}
+
+.texte_apro {
+    color: var(--secondary);
+    font-weight: bold;
 }
 
 .categories {
@@ -165,7 +184,7 @@ main {
 }
 
 .categorie {
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: "Thunder", sans-serif;
     font-weight: bolder;
     letter-spacing: 0.25rem;
@@ -233,6 +252,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .card:hover .card-img {
@@ -263,6 +283,7 @@ main {
     cursor: pointer;
     text-shadow: 5px 5px 5px var(--background);
     object-fit: contain;
+    cursor: pointer;
 }
 
 .container-interets {
@@ -311,6 +332,15 @@ main {
     gap: 2em;
 }
 
+.container-logiciel {
+    margin-top: 15rem;
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+
 .display_logiciel {
     display: flex;
     flex-direction: row;
@@ -323,13 +353,18 @@ main {
 }
 
 .logiciel {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Thunder", sans-serif;
-    color: var(--text);
-    mix-blend-mode: difference;
-    font-size: 2em;
+    font-weight: bolder;
+}
+
+.logo_logiciel {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
 }
 
 .logiciel:hover {
@@ -353,6 +388,20 @@ main {
 
 }
 
+.cv {
+    box-shadow: 5px 5px 15px 5px var(--background);
+    color: var(--text);
+    padding: 2rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "Thunder", sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.25rem;
+    border: none;
+    transition: 0.5s all ease;
+    background-color: transparent;
+    color: var(--secondary);
+}
 
 svg:hover {
     fill: var(--secondary);
@@ -360,7 +409,7 @@ svg:hover {
 }
 
 footer {
-    background-color: var(--text);
+    background-color: var(--secondary);
     color: var(--background);
     text-align: center;
     padding: 1rem;

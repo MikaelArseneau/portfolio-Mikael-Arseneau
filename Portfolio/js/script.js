@@ -29,4 +29,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     app.mount('#app');
+    const logiciels = document.querySelectorAll(".logiciel");
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#logiciel",
+            start: "top 80%",
+            toggleActions: "play none none none",
+            markers: true,
+
+        }
+    });
+
+    tl.fromTo(logiciels,
+        { x: -100, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
+    );
 });
+tl.add(() => {
+    gsap.to("#logo-figma", {
+        scale: 1.1,
+        rotation: 360,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    });
+
+    gsap.to(".titre-logiciel", {
+        color: "#F24E1E",
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+});
+
+
