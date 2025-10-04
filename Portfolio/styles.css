@@ -379,6 +379,24 @@ main {
 
 }
 
+.texte_contact {
+    font-size: 1.2rem;
+    font-family: "Thunder", sans-serif;
+    color: var(--text);
+    text-align: center;
+}
+
+.container-interets {
+    position: relative;
+    margin-top: 15rem;
+    color: var(--text);
+
+    text-align: center;
+    font-family: "Thunder", sans-serif;
+    height: auto;
+
+}
+
 .container-footer {
     width: 100%;
     display: flex;
