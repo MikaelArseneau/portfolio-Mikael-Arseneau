@@ -52,7 +52,7 @@ nav {
     background-color: #D9CCB6;
     position: sticky;
     top: 0;
-
+    width: 100vw;
     z-index: 100;
 }
 
@@ -189,6 +189,7 @@ main {
     font-weight: bolder;
     letter-spacing: 0.25rem;
     transition: 1s all ease;
+    font-size: 23m
 }
 
 .categorie:hover {
@@ -439,11 +440,17 @@ footer {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 
-    .container-contact .texte_contact {
-        width: 100%;
-        text-align: center;
+    .titre {
+        font-size: 6rem;
+    }
 
+    .info {
+        font-size: 1.2rem;
+    }
+
+    .categorie {
+        font-size: 0.6em
     }
 }
