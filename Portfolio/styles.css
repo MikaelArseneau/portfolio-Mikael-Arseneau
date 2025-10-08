@@ -249,14 +249,18 @@ main {
 }
 
 .all-projet {
+    margin-top: 6em;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 2em;
-    justify-content: center;
-    position: relative;
-    flex-grow: 1;
-    align-items: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+        position: relative;
+        flex-grow: 1;
+        align-items: flex-start;
+        width: 60%;
+        height: 60%;
+        align-content: center;
+ 
 }
 
 .card-img {
@@ -508,5 +512,8 @@ footer {
 
     .phone_project {
         display: block;
+    }
+    .all-projet{
+        margin-top: 0;
     }
 }
