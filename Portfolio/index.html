@@ -72,24 +72,29 @@
     <section id="projects" class="container my-5 container-projets mt-5">
       <div id="app">
 
-        <h2 class="mt-5 text-center impo">PROJETS</h2>
-        <div class="text-center categories mt-5">
-          <p class="categorie" v-for="cat in categories" :key="cat.id" :class="{ active: activeCat === cat.id }"
-            @click="setActive(cat.id)">
-            {{ cat.name }}
-          </p>
-        </div>
-        <div class="all-projet">
+        <h2 class="mt-5 impo text-center phone_project">PROJETS</h2>
+        <div class="mt-5 container projects">
+          <div class="text-center categories mt-5">
+            <div class="display_categories">
+              <h2 class="mt-5 impo text-center pc_project">PROJETS</h2>
+              <p class="categorie " v-for="cat in categories" :key="cat.id" :class="{ active: activeCat === cat.id }"
+                @click="setActive(cat.id)">
+                {{ cat.name }}
+              </p>
+            </div>
+          </div>
+          <div class="all-projet">
 
-          <transition-group name="fade" tag="div" class="all-projet">
-            <a v-for="project in projects" :key="project.id" :href="project.dossier" target="_blank"
-              v-show="activeCat === 'tous' || activeCat === project.categories" class="card text-bg-dark web">
-              <img :src="project.img" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title text-center">{{ project.title }}</h5>
-              </div>
-            </a>
-          </transition-group>
+            <transition-group name="fade" tag="div" class="all-projet">
+              <a v-for="project in projects" :key="project.id" :href="project.dossier" target="_blank"
+                v-show="activeCat === 'tous' || activeCat === project.categories" class="card text-bg-dark web">
+                <img :src="project.img" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-center">{{ project.title }}</h5>
+                </div>
+              </a>
+            </transition-group>
+          </div>
         </div>
       </div>
     </section>
@@ -162,8 +167,8 @@
       <h2 class="mb-5 ml-5 text-center impo">CONTACT</h2>
       <div class="mt-5 container-contact">
         <div class="information_display ">
-          <div class="texte_contact text-center">Projet en tete contacter moi</div>
-          <button type="button" class=" cv"> Contacter moi !</button>
+          <div class="texte_contact text-center">Un projet en tête ? <span class="texte_apro">Parlons-en !</span></div>
+          <a href="mikael.arseneau@hotmail.ca" class="contact-btn cv">CONTACTER MOI</a>
         </div>
 
 
