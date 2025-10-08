@@ -239,13 +239,12 @@ main {
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
-    transform: scale(0.95);
-    /* subtile réduction */
+   
 }
 
 .fade-move {
-    transition: transform 0.5s ease;
-    /* les cartes restantes glissent doucement */
+    transition: opacity 0.5s ease;
+    
 }
 
 .all-projet {
