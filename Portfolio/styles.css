@@ -52,7 +52,7 @@ nav {
     background-color: #D9CCB6;
     position: sticky;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 100;
 }
 
@@ -75,7 +75,7 @@ main {
     background-repeat: no-repeat;
     color: var(--text);
     top: 0;
-    width: 100vw;
+    width: 100%;
     position: absolute;
 }
 
@@ -123,7 +123,7 @@ main {
     mix-blend-mode: difference;
     font-family: "Thunder", sans-serif;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: left;
     text-shadow: 3px 3px 3px var(--background);
 }
 
@@ -137,6 +137,7 @@ main {
     text-align: center;
     text-shadow: 3px 3px 3px var(--background);
 }
+
 .container-propos {
     margin-top: 2rem;
     /* height: 300px;*/
@@ -248,27 +249,27 @@ main {
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
-   
+
 }
 
 .fade-move {
     transition: opacity 0.5s ease-in-out;
-    
+
 }
 
 .all-projet {
     margin-top: 6em;
     display: flex;
-        flex-wrap: wrap;
-        gap: 2em;
-        justify-content: center;
-        position: relative;
-        flex-grow: 1;
-        align-items: flex-start;
-        width: 60%;
-        height: 60%;
-        align-content: center;
- 
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+    align-items: flex-start;
+    width: 60%;
+    height: 60%;
+    align-content: center;
+
 }
 
 .card-img {
@@ -391,7 +392,7 @@ main {
 .container-contact .cv:hover {
     background-color: var(--secondary);
     color: var(--text);
-    
+
 }
 
 .texte_contact {
@@ -435,6 +436,7 @@ main {
     background-color: transparent;
     color: var(--secondary);
 }
+
 svg:hover {
     fill: var(--secondary);
     cursor: pointer;
@@ -489,7 +491,8 @@ footer {
     align-items: center;
     gap: 1rem;
 }
-.display_proj{
+
+.display_proj {
     display: flex;
     flex-direction: row-reverse;
     gap: 1rem 1rem;
@@ -498,17 +501,68 @@ footer {
     margin: auto;
     align-items: center;
 }
-.img_pro{
-   justify-self: left;
-    
+
+.img_pro img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
-.inf_pro{
+
+.inf_pro {
     text-align: right;
-    color:var(--secondary)
+    color: var(--secondary)
 }
 
+.information_logiciels {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
 
-        
+.info_collab {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: "Thunder", sans-serif;
+    font-weight: bolder;
+    color: var(--secondary);
+}
+
+.img_pro {
+    filter: brightness(90%);
+    border-radius: 10px;
+
+}
+
+.container-proj {
+    width: 60vw;
+
+    text-align: left;
+
+}
+
+.processus {
+    color: var(--text);
+    mix-blend-mode: difference;
+}
+
+.collab {
+    color: var(--text);
+    mix-blend-mode: difference;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.collab:hover {
+    color: var(--secondary);
+}
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -522,6 +576,10 @@ footer {
 
     .display_categories {
         font-size: 0.6em;
+        flex-direction: column;
+    }
+
+    .info_collab {
         flex-direction: column;
     }
 
@@ -541,7 +599,8 @@ footer {
     .phone_project {
         display: block;
     }
-    .all-projet{
+
+    .all-projet {
         margin-top: 0;
     }
 }
