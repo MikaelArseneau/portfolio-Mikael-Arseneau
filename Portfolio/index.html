@@ -44,7 +44,7 @@
     </nav>
   </header>
   <main>
-
+    <div class="cursor" id="cursor"></div>
     <section id="accueil" class="container my-5">
       <div class="accueil-container">
         <p class="info">développeur web et montage audio-visuelle </p>
@@ -54,7 +54,7 @@
       <img src="./media/moi.png" alt="photo de moi" class="photo_moi">
     </section>
     <section id="propos" class="container my-5">
-      <h2 class=" ml-5 text-center impo">À PROPOS DE MOI</h2>
+      <h2 class=" ml-5 text-center impo">À PROPOS DE MOI<sub>I</sub></h2>
       <div class="mt-5 container-propos">
         <p class="information ">
           Développeur enthousiaste, je souhaite rejoindre une équipe où mes <span class="texte_apro">compétences en
@@ -72,11 +72,11 @@
     <section id="projects" class="container my-5 container-projets mt-5">
       <div id="app">
 
-        <h2 class="mt-5 impo text-center phone_project">PROJETS</h2>
+        <h2 class="mt-5 impo text-center phone_project">PROJETS<sub>1</sub></h2>
         <div class="mt-5 container projects">
           <div class="text-center categories mt-5">
             <div class="display_categories">
-              <h2 class="mt-5 impo text-center pc_project">PROJETS</h2>
+              <h2 class="mt-5 impo text-center pc_project">PROJETS<sub>II</sub></h2>
               <p class="categorie " v-for="cat in categories" :key="cat.id" :class="{ active: activeCat === cat.id }"
                 @click="setActive(cat.id)">
                 {{ cat.name }}
@@ -102,7 +102,7 @@
 
 
     <section id="logiciel" class="container-logiciel  ">
-      <h2 class="mb-5 text-center impo">LOGICIELS</h2>
+      <h2 class="mb-5 text-center impo">LOGICIELS<sub>III</sub></h2>
       <div class="mt-5 container-logiciel">
         <div class="display_logiciel">
           <div class="logciel">
@@ -142,7 +142,7 @@
       </div>
     </section>
     <section id="interet" class="container-interets">
-      <h2 class="mb-5  text-center impo">Intérets</h2>
+      <h2 class="mb-5  text-center impo">Intérets<sub>IV</sub></h2>
       <div class="mt-5 container">
         <div class="information_logiciel">
           <div class="display_logiciel ">
@@ -164,7 +164,7 @@
     </section>
 
     <section id="contact" class="container my-5">
-      <h2 class="mb-5 ml-5 text-center impo">CONTACT</h2>
+      <h2 class="mb-5 ml-5 text-center impo">CONTACT<sub>V</sub></h2>
       <div class="mt-5 container-contact">
         <div class="information_display ">
           <div class="texte_contact text-center">Un projet en tête ? <span class="texte_apro">Parlons-en !</span></div>

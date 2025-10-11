@@ -32,21 +32,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     app.mount('#app');
     const logiciels = document.querySelectorAll(".logiciel");
+    const logo = document.querySelectorAll(".logo_logiciel");
 
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#logiciel",
-            start: "top 80%",
+            start: "top 10%",
             toggleActions: "play none none none",
+            markers: true
 
 
         }
     });
-
-    tl.fromTo(logiciels,
+    tl.fromTo(logo,
         { x: -100, opacity: 0 },
         { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
     );
+
+    tl.fromTo(logiciels,
+        { opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
+    );
+    var cursor = document.getElementById("cursor");
+    document.body.addEventListener("mousemove", function (e) {
+        cursor.style.left = e.clientX + "px",
+            cursor.style.top = e.clientY + "px";
+    });
 });
 
 
