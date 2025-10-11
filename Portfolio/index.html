@@ -87,8 +87,8 @@
 
             <transition-group name="fade" tag="div" class="all-projet">
               <a v-for="project in projects" :key="project.id" :href="project.dossier" target="_blank"
-                v-show="activeCat === 'tous' || activeCat === project.categories" class="card text-bg-dark web">
-                <img :src="project.img" class="card-img" alt="...">
+                v-show="activeCat === 'tous' || activeCat === project.categorie" class="card text-bg-dark web">
+                <img :src="project.images" class="card-img" alt="...">
                 <div class="card-img-overlay">
                   <h5 class="card-title text-center">{{ project.title }}</h5>
                 </div>

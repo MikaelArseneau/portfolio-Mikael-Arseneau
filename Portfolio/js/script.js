@@ -11,15 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     { id: 'montage', name: 'Montage visuelle' },
                     { id: 'troisDimension', name: '3D' }
                 ],
-                projects: [
-                    { id: 1, categories: 'web', title: 'Métrage', img: './media/metrage.png', dossier: 'metrage.html' },
-                    { id: 2, categories: 'web', title: 'DIX 10', dossier: "dix10.html", img: './media/dix10.png' },
-                    { id: 3, categories: 'montage', title: 'Coeur de la montage', dossier: "coeur.html", img: './media/coeur_de_la_montagne.jpg' },
-                    { id: 4, categories: 'montage', title: 'Terminus', img: './media/terminus.jpg', dossier: "terminus.html" },
-                    { id: 5, categories: 'troisDimension', title: 'Chasseur de crane', img: './media/chasseur.png', dossier: "chasseur.html" },
-                    { id: 6, categories: 'montage', title: 'La Montée', img: './media/montee.png', dossier: "montee.html" },
-                ]
+                projects: []
             };
+        },
+        mounted() {
+            fetch('../project.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.projects = data;
+                    console.log(this.projects)
+                })
+                .catch(error => console.error('Erreur de chargement des projets:', error));
         },
         methods: {
             setActive(categories) {
