@@ -1,3 +1,4 @@
+/* création du root pour les couleurs*/
 :root {
     --text: #f0ede4;
     --background: #2d2d2a;
@@ -5,11 +6,13 @@
     --secondary: #ed6a5a;
 }
 
+/* importation de la font*/
 @font-face {
     font-family: "Thunder";
     src: url(./media/font/Outfit-VariableFont_wght.ttf) format("truetype");
 }
 
+/* mettre les margin a 0, que toutes la texte est la meme font*/
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +21,7 @@
     scroll-behavior: smooth;
 }
 
+/* mettre un boule qui suit le mouvement de la souris a travers le projet*/
 .cursor {
     position: fixed;
     border-radius: 50%;
@@ -83,6 +87,7 @@ nav .navbar-toggler:focus {
 
 
 
+/* mettre le background sur tout le site*/
 main {
     background-image: url(./media/background.png);
     background-size: cover;
@@ -459,7 +464,7 @@ h2 sub {
     font-weight: bolder;
     letter-spacing: 0.25rem;
     border: none;
-    transition: 0.5s all ease-in-out;
+    transition: 1s all ease-in-out;
     background-color: transparent;
     color: var(--secondary);
 }
@@ -467,17 +472,19 @@ h2 sub {
 svg:hover {
     fill: var(--secondary);
     cursor: pointer;
+    transition: 0.5s all ease-in-out;
 }
 
 footer {
-    background-color: var(--secondary);
-    color: var(--background);
+    background-color: #D9CCB6;
+    color: var(--secondary);
     text-align: center;
     padding: 1rem;
     position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 2rem;
+    font-size: 1em;
 }
 
 .image-container {
@@ -588,6 +595,19 @@ footer {
 
 .collab:hover {
     color: var(--secondary);
+}
+
+.image_projet {
+    margin-top: 2em;
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    position: relative;
+    filter: brightness(90%);
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    object-position: 0;
 }
 
 

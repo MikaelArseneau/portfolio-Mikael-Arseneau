@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cursor.style.left = e.clientX + "px",
             cursor.style.top = e.clientY + "px";
     });
+    document.getElementById("year").innerHTML = new Date().getFullYear();
 });
 
 
