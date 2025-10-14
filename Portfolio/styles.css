@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: "thunder", sans-serif;
     scroll-behavior: smooth;
+
 }
 
 /* mettre un boule qui suit le mouvement de la souris a travers le projet*/
@@ -610,6 +611,10 @@ footer {
     object-position: 0;
 }
 
+a.texte_apro {
+    text-underline-offset: 0.5em;
+    font-size: 1.5em;
+}
 
 @media only screen and (max-width: 1000px) {
 

@@ -76,7 +76,7 @@
         <div class="mt-5 container projects">
           <div class="text-center categories mt-5">
             <div class="display_categories">
-              <h2 class="mt-5 impo text-center pc_project">PROJETS<sub>II</sub></h2>
+              <h2 class="mt-5 impo text-center pc_project">PROJETS</h2>
               <p class="categorie " v-for="cat in categories" :key="cat.id" :class="{ active: activeCat === cat.id }"
                 @click="setActive(cat.id)">
                 {{ cat.name }}
@@ -120,6 +120,10 @@
           <div class="logciel">
             <img src="./media/davinci.png" alt="logo figma" class="logo_logiciel">
             <p class="logiciel" data-logo="figma.png">Davinci</p>
+          </div>
+          <div class="logciel">
+            <img src="./media/touch.png" alt="logo figma" class="logo_logiciel">
+            <p class="logiciel" data-logo="figma.png">Touch</p>
           </div>
           <div class="logciel">
             <img src="./media/reaper.png" alt="logo figma" class="logo_logiciel">
