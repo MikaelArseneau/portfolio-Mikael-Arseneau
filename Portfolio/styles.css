@@ -537,11 +537,19 @@ footer {
     align-items: center;
 }
 
-.img_pro img {
-    height: auto;
+.accueil-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1rem 1rem;
+    justify-content: center;
     width: 100%;
-    object-fit: cover;
+    margin: auto;
+    align-items: left;
+
 }
+
+
 
 .inf_pro {
     text-align: right;
@@ -569,9 +577,20 @@ footer {
     color: var(--secondary);
 }
 
-.img_pro {
-    filter: brightness(90%);
+.img_pro img {
+    top: 0;
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: auto;
     border-radius: 10px;
+    filter: brightness(90%);
+}
+
+.img_pro {
+    height: 50vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
 }
 
@@ -614,6 +633,12 @@ footer {
 a.texte_apro {
     text-underline-offset: 0.5em;
     font-size: 1.5em;
+}
+
+.projet-container {
+    margin-top: 8em;
+    margin-bottom: 5em;
+
 }
 
 @media only screen and (max-width: 1000px) {

@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: "#logiciel",
             start: "top 10%",
             toggleActions: "play none none none",
-            markers: true
+
 
 
         }
@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cursor.style.top = e.clientY + "px";
     });
     document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
 });
 
 
