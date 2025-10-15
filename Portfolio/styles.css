@@ -12,6 +12,11 @@
     src: url(./media/font/Outfit-VariableFont_wght.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "Instrument";
+    src: url(./media/font/Instrument.ttf) format("truetype");
+}
+
 /* mettre les margin a 0, que toutes la texte est la meme font*/
 * {
     margin: 0;
@@ -647,6 +652,43 @@ object {
     object-fit: cover;
 }
 
+.autre {
+    font-size: 1.6em;
+}
+
+.autre_projet {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.display_projet {
+    margin-top: 1em;
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.display_projet a {
+    font-family: "Instrument";
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--text);
+    mix-blend-mode: difference;
+    cursor: pointer;
+}
+
+
+
+.numero {
+    font-family: "Instrument";
+    font-size: 0.6em;
+}
 
 @media only screen and (max-width: 1000px) {
 
