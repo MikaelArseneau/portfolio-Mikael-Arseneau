@@ -641,6 +641,13 @@ a.texte_apro {
 
 }
 
+object {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
 @media only screen and (max-width: 1000px) {
 
     .titre {
@@ -679,5 +686,26 @@ a.texte_apro {
 
     .all-projet {
         margin-top: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    .container-proj {
+        width: 95vw;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .information_logiciels {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
