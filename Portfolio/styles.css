@@ -13,6 +13,11 @@
 }
 
 @font-face {
+    font-family: "inter";
+    src: url(./media/font/Inter.ttf) format("truetype");
+}
+
+@font-face {
     font-family: "Instrument";
     src: url(./media/font/Instrument.ttf) format("truetype");
 }
@@ -22,7 +27,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "thunder", sans-serif;
     scroll-behavior: smooth;
 
 }
@@ -122,7 +126,7 @@ main {
     color: var(--text);
     text-shadow: 3px 3px 3px var(--background);
     font-family: "Thunder", sans-serif;
-    font-weight: bolder;
+    font-weight: 700;
     margin-bottom: 1rem;
     mix-blend-mode: difference;
     letter-spacing: -8px;
@@ -196,8 +200,13 @@ h2 sub {
     text-align: left;
     position: relative;
     object-fit: contain;
-    font-size: 1em;
-    font-family: "Thunder", sans-serif;
+    font-size: 1.2em;
+    font-family: "inter";
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--text);
+    mix-blend-mode: difference;
+    letter-spacing: 0.1px;
 }
 
 .container-projets {
@@ -243,7 +252,7 @@ h2 sub {
 
 .categorie {
     text-transform: lowercase;
-    font-family: "Thunder", sans-serif;
+    font-family: "inter";
     font-weight: bolder;
     letter-spacing: 0.25rem;
     transition: 1s all ease;
@@ -419,7 +428,7 @@ h2 sub {
 
 .logiciel:hover {
     color: var(--secondary);
-    cursor: pointer;
+    cursor: none;
     transition: 0.5s all ease-in-out;
 }
 
@@ -491,6 +500,8 @@ footer {
     width: 100%;
     margin-top: 2rem;
     font-size: 1em;
+    font-family: "inter";
+    font-weight: 400;
 }
 
 .image-container {
@@ -558,7 +569,8 @@ footer {
 
 .inf_pro {
     text-align: right;
-    color: var(--secondary)
+    color: var(--secondary);
+    font-family: "inter";
 }
 
 .information_logiciels {
@@ -603,7 +615,22 @@ footer {
     width: 60vw;
     margin-bottom: 5em;
     text-align: left;
+    font-family: "inter";
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+}
 
+.container-proj p {
+    color: var(--text);
+    mix-blend-mode: difference;
+    font-size: 1.1em;
+
+}
+
+.container-proj h3 {
+    font-family: "thunder";
+    font-weight: 600;
 }
 
 .processus {
@@ -689,6 +716,8 @@ object {
     font-family: "Instrument";
     font-size: 0.6em;
 }
+
+
 
 @media only screen and (max-width: 1000px) {
 

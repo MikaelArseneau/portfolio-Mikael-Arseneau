@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(TextPlugin);
 document.addEventListener('DOMContentLoaded', () => {
     const app = Vue.createApp({
         data() {
@@ -59,6 +59,52 @@ document.addEventListener('DOMContentLoaded', () => {
             cursor.style.top = e.clientY + "px";
     });
     document.getElementById("year").innerHTML = new Date().getFullYear();
+    // Section À propos
+    const profilTitre = document.querySelector("#profil");
+    const profilText = document.querySelector(".container-propos");
+    const texteApro = document.querySelectorAll(".texte_apro");
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#propos1",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+            markers: true
+        }
+    })
+        .fromTo(profilTitre,
+            { y: 20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 1.3, ease: "power2.out" }
+        )
+        .fromTo(profilText,
+            { x: 20, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
+        )
+        .fromTo(texteApro,
+            { color: "#ffffff" },
+            { color: "#ed6a5a", stagger: 0.4, duration: 0.8, ease: "power2.out" },
+            "-=0.1"
+        );
+    const projet = document.querySelector("#projects");
+    const cat = document.querySelector(".display_categories");
+    const cards = document.querySelectorAll(".card");
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#projects",
+            start: "top 60%",
+            toggleActions: "play none none reverse",
+            markers: true // à enlever ensuite
+        }
+    })
+        .fromTo(projet,
+            { y: 20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
+        )
+        .fromTo(cat,
+            { x: 20, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, // commence légèrement avant la fin de l'animation du titre
+        )
 
 
 });
