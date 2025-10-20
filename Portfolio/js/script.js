@@ -33,17 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
     app.mount('#app');
     const logiciels = document.querySelectorAll(".logiciel");
     const logo = document.querySelectorAll(".logo_logiciel");
+    const int_titre = document.querySelector("#interet_titre");
 
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#logiciel",
             start: "top 10%",
             toggleActions: "play none none none",
-
-
-
+            markers: true
         }
     });
+    tl.fromTo(int_titre,
+        { x: -100, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
+    );
     tl.fromTo(logo,
         { x: -100, opacity: 0 },
         { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
@@ -69,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: "#propos1",
             start: "top 80%",
             toggleActions: "play none none reverse",
-            markers: true
+
         }
     })
         .fromTo(profilTitre,
@@ -82,8 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
         )
         .fromTo(texteApro,
             { color: "#ffffff" },
-            { color: "#ed6a5a", stagger: 0.4, duration: 0.8, ease: "power2.out" },
-            "-=0.1"
+            {
+                color: "#ed6a5a",
+                duration: 0.8,
+                ease: "power2.out",
+                stagger: 0.4,
+                onStart: () => {
+                    texteApro.forEach(el => el.style.mixBlendMode = "difference");
+                }
+            }
         );
     const projet = document.querySelector("#projects");
     const cat = document.querySelector(".display_categories");
@@ -94,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: "#projects",
             start: "top 60%",
             toggleActions: "play none none reverse",
-            markers: true // à enlever ensuite
+
         }
     })
         .fromTo(projet,
