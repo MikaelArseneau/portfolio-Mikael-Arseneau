@@ -99,8 +99,7 @@ nav .navbar-toggler:focus {
 
 /* mettre le background sur tout le site*/
 main {
-     /*background-image: url(./media/background.png);*/
-     background: linear-gradient(to right, #0f172a, #334155);
+    background: linear-gradient(to right, #0f172a, #334155);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text);
@@ -108,6 +107,7 @@ main {
     width: 100%;
     position: absolute;
 }
+
 
 .accueil-container {
     display: flex;
@@ -233,7 +233,7 @@ h2 sub {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 2rem;
-
+    mix-blend-mode: difference;
 
 }
 
@@ -259,10 +259,12 @@ h2 sub {
     transition: 1s all ease;
     font-size: 1em;
     color: var(--text);
+    mix-blend-mode:difference;
     text-align: right;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+   
 }
 
 .categorie:hover {
@@ -692,8 +694,9 @@ object {
     flex-direction: column;
     align-items: center;
     width: 60vw;
-    margin: auto;
     margin-bottom: 4em;
+    position: relative;
+    margin: auto;
 }
 
 .display_projet {

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logo = document.querySelectorAll(".logo_logiciel");
     const int_titre = document.querySelector("#interet_titre");
     const logi_titre = document.querySelector("#titre_logi");
-    const main = document.querySelector(".main_projet");
+    
 
     const tl = gsap.timeline({
         scrollTrigger: {
@@ -52,15 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
     tl.fromTo(logo,
         { x: -100, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
+        { x: 0, opacity: 1, duration: 0.2, stagger: 0.1, ease: "power2.out" }
     );
     tl.fromTo(int_titre,
         { x: -100, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
+        { x: 0, opacity: 1, duration: 0.2, stagger: 0.2, ease: "power2.out" }
     );
     tl.fromTo(logiciels,
         { opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
+        { x: 0, opacity: 1, duration: 0.2, stagger: 0.1, ease: "power2.out" }
     );
     var cursor = document.getElementById("cursor");
     document.body.addEventListener("mousemove", function (e) {
@@ -233,7 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { x: 20, opacity: 0 },
             { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, // commence légèrement avant la fin de l'animation du titre
         );
-
+        const main_index = document.querySelector(".main_index");
+        const main_projet = document.querySelector(".main_projet");
 
         gsap.timeline({
             scrollTrigger: {
@@ -244,11 +245,27 @@ document.addEventListener('DOMContentLoaded', () => {
     
             }
         })
-            .fromTo(main,
+            .fromTo(main_index,
                 {  background : "linear-gradient(to right, #0f172a, #334155);"  },
                 { background: "#E2E0DA", duration:0.5, ease: "power2.all" }
             )
-            
+
+
+
+          /*  gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#role",
+                    start: "top 50%",
+                    toggleActions: "play none none reverse",
+                    markers:true
+        
+                }
+            })
+                .fromTo(main_projet,
+                    {  background : "linear-gradient(to right, #0f172a, #334155);"  },
+                    { background: "#E2E0DA", duration:0.5, ease: "power2.all" }
+                )
+            */
 });
 
 
