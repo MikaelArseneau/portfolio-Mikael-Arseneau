@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const logo = document.querySelectorAll(".logo_logiciel");
     const int_titre = document.querySelector("#interet_titre");
     const logi_titre = document.querySelector("#titre_logi");
-    const main = document.querySelector("main");
+    const main = document.querySelector(".main_projet");
 
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#logiciel",
-            start: "top 10%",
+            start: "top 70%",
             toggleActions: "play none none none",
             markers: true
         }
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.timeline({
             scrollTrigger: {
                 trigger: "#logiciel",
-                start: "top 0%",
+                start: "top 50%",
                 toggleActions: "play none none reverse",
                 markers:true
     
