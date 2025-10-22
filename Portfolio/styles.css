@@ -623,7 +623,7 @@ footer {
 
 .container-proj p {
     color: var(--text);
-    mix-blend-mode: difference;
+   
     font-size: 1.1em;
 
 }
