@@ -99,7 +99,8 @@ nav .navbar-toggler:focus {
 
 /* mettre le background sur tout le site*/
 main {
-    background-image: url(./media/background.png);
+     /*background-image: url(./media/background.png);*/
+     background: linear-gradient(to right, #0f172a, #334155);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text);
@@ -417,6 +418,7 @@ h2 sub {
     font-family: "Thunder", sans-serif;
     font-weight: bolder;
     transition: 0.5s all ease-in-out;
+    mix-blend-mode: difference;
 }
 
 .logo_logiciel {
@@ -447,6 +449,7 @@ h2 sub {
     font-family: "Thunder", sans-serif;
     color: var(--text);
     text-align: center;
+    mix-blend-mode: difference;
 }
 
 .container-interets {

@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const logiciels = document.querySelectorAll(".logiciel");
     const logo = document.querySelectorAll(".logo_logiciel");
     const int_titre = document.querySelector("#interet_titre");
+    const logi_titre = document.querySelector("#titre_logi");
+    const main = document.querySelector("main");
 
     const tl = gsap.timeline({
         scrollTrigger: {
@@ -43,15 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
             markers: true
         }
     });
-    tl.fromTo(int_titre,
+    tl.fromTo(logi_titre,
         { x: -100, opacity: 0 },
         { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
     );
+  
     tl.fromTo(logo,
         { x: -100, opacity: 0 },
         { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
     );
-
+    tl.fromTo(int_titre,
+        { x: -100, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
+    );
     tl.fromTo(logiciels,
         { opacity: 0 },
         { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
@@ -226,9 +232,23 @@ document.addEventListener('DOMContentLoaded', () => {
         .fromTo(cat,
             { x: 20, opacity: 0 },
             { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, // commence légèrement avant la fin de l'animation du titre
-        )
+        );
 
 
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: "#logiciel",
+                start: "top 0%",
+                toggleActions: "play none none reverse",
+                markers:true
+    
+            }
+        })
+            .fromTo(main,
+                {  background : "linear-gradient(to right, #0f172a, #334155);"  },
+                { background: "#E2E0DA", duration:0.5, ease: "power2.all" }
+            )
+            
 });
 
 
