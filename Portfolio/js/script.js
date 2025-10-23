@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
         .fromTo(main_index,
-            { background: "#131C26" },
+            { background: "linear-gradient(to right, #0f172a, #334155)" },
             { background: "#E5E5E5", duration: 0.8, ease: "power2.inOut" }
         )
         .fromTo(main_index,
@@ -276,21 +276,24 @@ document.addEventListener('DOMContentLoaded', () => {
             { y: -90, duration: 0.1,scale:1.1, ease: "power2.inOut" }, 0
         );
 
-    /*  gsap.timeline({
-          scrollTrigger: {
-              trigger: "#role",
-              start: "top 50%",
-              toggleActions: "play none none reverse",
-              markers:true
-  
-          }
-      })
-          .fromTo(main_projet,
-              {  background : "linear-gradient(to right, #0f172a, #334155);"  },
-              { background: "#E2E0DA", duration:0.5, ease: "power2.all" }
-          )
-      */
+      
+      const logiciel_projet = document.querySelectorAll(".logiciel_projet");
+      gsap.timeline({
+        scrollTrigger: {
+            trigger: "#logiciel_prof",
+            start: "top 60%",
+            toggleActions: "play none none reverse",
+
+
+        }
+    })
+        .fromTo(logiciel_projet,
+            { y: 20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.5,stagger:0.5, ease: "power2.out" }
+        )
+    
 });
+
 
 
 

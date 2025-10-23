@@ -108,7 +108,6 @@ main {
     position: absolute;
 }
 
-
 .accueil-container {
     display: flex;
     flex-direction: column;
@@ -433,6 +432,12 @@ transform: translateX(-50%);
     object-fit: contain;
     margin-bottom: 0.5rem;
 }
+.logo_logiciel_projet {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
 
 .logiciel:hover {
     color: var(--secondary);
@@ -727,6 +732,17 @@ object {
     font-size: 0.6em;
 }
 
+.logiciel_projet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logiciel_pro{
+    font-family: "Thunder";
+    font-size: 1.2em;
+    font-weight: 500;
+}
 
 
 @media only screen and (max-width: 1000px) {
