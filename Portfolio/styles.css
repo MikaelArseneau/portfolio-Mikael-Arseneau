@@ -133,6 +133,12 @@ main {
     letter-spacing: -8px;
 }
 
+.prenom,
+.nom {
+    display: inline-block;
+
+}
+
 h2 sub {
     font-family: "Playfair Display", serif;
     font-size: 0.3em;
@@ -259,12 +265,12 @@ h2 sub {
     transition: 1s all ease;
     font-size: 1em;
     color: var(--text);
-    mix-blend-mode:difference;
+    mix-blend-mode: difference;
     text-align: right;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-   
+
 }
 
 .categorie:hover {
@@ -628,7 +634,7 @@ footer {
 
 .container-proj p {
     color: var(--text);
-   
+
     font-size: 1.1em;
 
 }

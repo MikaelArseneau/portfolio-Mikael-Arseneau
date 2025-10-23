@@ -35,21 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const logo = document.querySelectorAll(".logo_logiciel");
     const int_titre = document.querySelector("#interet_titre");
     const logi_titre = document.querySelector("#titre_logi");
-    
+
 
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#logiciel",
             start: "top 70%",
             toggleActions: "play none none none",
-            markers: true
+
         }
     });
     tl.fromTo(logi_titre,
         { x: -100, opacity: 0 },
         { x: 0, opacity: 1, duration: 0.6, stagger: 0.3, ease: "power2.out" }
     );
-  
+
     tl.fromTo(logo,
         { x: -100, opacity: 0 },
         { x: 0, opacity: 1, duration: 0.2, stagger: 0.1, ease: "power2.out" }
@@ -104,115 +104,115 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         );
 
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: "#objectif",
-                start: "top 80%",
-                toggleActions: "play none none reverse",
-    
-            }
-        })
-            
-            .fromTo(texteAproObj,
-                { color: "#ffffff" },
-                {
-                    color: "#ed6a5a",
-                    duration: 3,
-                    ease: "power2.out",
-                    stagger: 0.4,
-                }
-            );
-            gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#role",
-                    start: "top 80%",
-                    toggleActions: "play none none reverse",
-        
-                }
-            })
-                
-                .fromTo(texteAproRole,
-                    { color: "#ffffff" },
-                    {
-                        color: "#ed6a5a",
-                        duration: 0.6,
-                        ease: "power2.out",
-                        stagger: 0.4,
-                    }
-                );
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#objectif",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
 
-                gsap.timeline({
-                    scrollTrigger: {
-                        trigger: "#processus_texte",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-            
-                    }
-                })
-                    
-                    .fromTo(texteAproPro,
-                        { color: "#ffffff" },
-                        {
-                            color: "#ed6a5a",
-                            duration: 0.6,
-                            ease: "power2.out",
-                            stagger: 0.4,
-                        }
-                    );
-                    gsap.timeline({
-                        scrollTrigger: {
-                            trigger: "#design_texte",
-                            start: "top 80%",
-                            toggleActions: "play none none reverse",
-              
-                        }
-                    })
-                        
-                        .fromTo(texteAproDesign,
-                            { color: "#ffffff" },
-                            {
-                                color: "#ed6a5a",
-                                duration: 0.6,
-                                ease: "power2.out",
-                                stagger: 0.4,
-                            }
-                        );
-                        gsap.timeline({
-                            scrollTrigger: {
-                                trigger: "#dev_texte",
-                                start: "top 80%",
-                                toggleActions: "play none none reverse",
-                   
-                            }
-                        })
-                            
-                            .fromTo(texteAproDev,
-                                { color: "#ffffff" },
-                                {
-                                    color: "#ed6a5a",
-                                    duration: 0.6,
-                                    ease: "power2.out",
-                                    stagger: 0.4,
-                                }
-                            );
-                            gsap.timeline({
-                                scrollTrigger: {
-                                    trigger: "#optimisation_texte",
-                                    start: "top 80%",
-                                    toggleActions: "play none none reverse",
-                       
-                                }
-                            })
-                                
-                                .fromTo(texteAproOpti,
-                                    { color: "#ffffff" },
-                                    {
-                                        color: "#ed6a5a",
-                                        duration: 2,
-                                        ease: "power2.out",
-                                        stagger: 0.4,
-                                    }
-                                );
+        }
+    })
+
+        .fromTo(texteAproObj,
+            { color: "#ffffff" },
+            {
+                color: "#ed6a5a",
+                duration: 3,
+                ease: "power2.out",
+                stagger: 0.4,
+            }
+        );
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#role",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+
+        }
+    })
+
+        .fromTo(texteAproRole,
+            { color: "#ffffff" },
+            {
+                color: "#ed6a5a",
+                duration: 0.6,
+                ease: "power2.out",
+                stagger: 0.4,
+            }
+        );
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#processus_texte",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+
+        }
+    })
+
+        .fromTo(texteAproPro,
+            { color: "#ffffff" },
+            {
+                color: "#ed6a5a",
+                duration: 0.6,
+                ease: "power2.out",
+                stagger: 0.4,
+            }
+        );
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#design_texte",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+
+        }
+    })
+
+        .fromTo(texteAproDesign,
+            { color: "#ffffff" },
+            {
+                color: "#ed6a5a",
+                duration: 0.6,
+                ease: "power2.out",
+                stagger: 0.4,
+            }
+        );
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#dev_texte",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+
+        }
+    })
+
+        .fromTo(texteAproDev,
+            { color: "#ffffff" },
+            {
+                color: "#ed6a5a",
+                duration: 0.6,
+                ease: "power2.out",
+                stagger: 0.4,
+            }
+        );
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#optimisation_texte",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+
+        }
+    })
+
+        .fromTo(texteAproOpti,
+            { color: "#ffffff" },
+            {
+                color: "#ed6a5a",
+                duration: 2,
+                ease: "power2.out",
+                stagger: 0.4,
+            }
+        );
     const projet = document.querySelector("#projects");
     const cat = document.querySelector(".display_categories");
     const cards = document.querySelectorAll(".card");
@@ -233,39 +233,62 @@ document.addEventListener('DOMContentLoaded', () => {
             { x: 20, opacity: 0 },
             { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, // commence légèrement avant la fin de l'animation du titre
         );
-        const main_index = document.querySelector(".main_index");
-        const main_projet = document.querySelector(".main_projet");
+    const main_index = document.querySelector(".main_index");
+    const main_projet = document.querySelector(".main_projet");
 
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: "#logiciel",
-                start: "top 50%",
-                toggleActions: "play none none reverse",
-                markers:true
-    
-            }
-        })
-            .fromTo(main_index,
-                {  background : "linear-gradient(to right, #0f172a, #334155);"  },
-                { background: "#E2E0DA", duration:0.5, ease: "power2.all" }
-            )
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#logiciel",
+            start: "top 50%",
+            toggleActions: "play none none reverse",
 
 
+        }
+    })
+        .fromTo(main_index,
+            { background: "#131C26" },
+            { background: "#E5E5E5", duration: 0.8, ease: "power2.inOut" }
+        )
+        .fromTo(main_index,
+            { filter: "brightness(1)" },
+            { filter: "brightness(0.95)", duration: 0.4, yoyo: true, repeat: 1, ease: "power1.inOut" },
+            "-=0.3"
+        );
 
-          /*  gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#role",
-                    start: "top 50%",
-                    toggleActions: "play none none reverse",
-                    markers:true
-        
-                }
-            })
-                .fromTo(main_projet,
-                    {  background : "linear-gradient(to right, #0f172a, #334155);"  },
-                    { background: "#E2E0DA", duration:0.5, ease: "power2.all" }
-                )
-            */
+
+    let tlnom = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#title",
+            start: "top 15%",
+            toggleActions: "play none none reverse",
+            markers: true
+        }
+    });
+
+
+    tlnom.fromTo(".prenom",
+        { y: 0, rotate: 0, scale: 1 }, // au début droit et normal
+        { y: 60, rotate: 3, scale: 1.05, duration: 0.3, ease: "elastic.out(1, 0.3)" }, 0
+    )
+        .fromTo(".nom",
+            { y: 0, rotate: 0, scale: 1 }, // idem
+            { y: -90, rotate: -3, scale: 0.8, duration: 0.5, ease: "ease.inOut" }, 0.05
+        );
+
+    /*  gsap.timeline({
+          scrollTrigger: {
+              trigger: "#role",
+              start: "top 50%",
+              toggleActions: "play none none reverse",
+              markers:true
+  
+          }
+      })
+          .fromTo(main_projet,
+              {  background : "linear-gradient(to right, #0f172a, #334155);"  },
+              { background: "#E2E0DA", duration:0.5, ease: "power2.all" }
+          )
+      */
 });
 
 
