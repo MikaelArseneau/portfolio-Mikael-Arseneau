@@ -195,8 +195,8 @@ h2 sub {
     border-radius: 10px;
     padding: 64px;
     box-shadow: 5px 5px 15px 5px var(--text);
-left: 50%;
-transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -432,6 +432,7 @@ transform: translateX(-50%);
     object-fit: contain;
     margin-bottom: 0.5rem;
 }
+
 .logo_logiciel_projet {
     height: 64px;
     width: 64px;
@@ -702,10 +703,10 @@ object {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     margin-bottom: 4em;
     position: relative;
-    
+
 }
 
 .display_projet {
@@ -725,20 +726,28 @@ object {
     cursor: pointer;
 }
 
+.orange {
+    color: var(--background);
+    font-size: 2em;
+    display: inline-block;
+    mix-blend-mode: difference;
+    background-color: blue;
 
+}
 
 .numero {
     font-family: "Instrument";
     font-size: 0.6em;
 }
 
-.logiciel_projet{
+.logiciel_projet {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.logiciel_pro{
+
+.logiciel_pro {
     font-family: "Thunder";
     font-size: 1.2em;
     font-weight: 500;
