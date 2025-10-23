@@ -259,20 +259,21 @@ document.addEventListener('DOMContentLoaded', () => {
     let tlnom = gsap.timeline({
         scrollTrigger: {
             trigger: "#title",
-            start: "top 15%",
+            start: "top 25%",
             toggleActions: "play none none reverse",
-            markers: true
+            markers: true,
+            scrub:2
         }
     });
 
 
     tlnom.fromTo(".prenom",
         { y: 0, rotate: 0, scale: 1 }, // au début droit et normal
-        { y: 60, rotate: 3, scale: 1.05, duration: 0.3, ease: "elastic.out(1, 0.3)" }, 0
+        { y: 60, scale: 1.05, duration: 0.1, ease: "power2.inOut" }, 0
     )
         .fromTo(".nom",
             { y: 0, rotate: 0, scale: 1 }, // idem
-            { y: -90, rotate: -3, scale: 0.8, duration: 0.5, ease: "ease.inOut" }, 0.05
+            { y: -90, duration: 0.1,scale:1.1, ease: "power2.inOut" }, 0
         );
 
     /*  gsap.timeline({
