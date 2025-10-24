@@ -246,11 +246,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
         .fromTo(main_index,
-            { background: "linear-gradient(to right, #0f172a, #334155)" },
+            { background: "linear-gradient(to right, #0f172a, #334155)", ease: "power2.inOut" },
             { background: "#E5E5E5", duration: 0.8, ease: "power2.inOut" }
         )
         .fromTo(main_index,
-            { filter: "brightness(1)" },
+            { filter: "brightness(1)", ease: "power2.inOut" },
             { filter: "brightness(0.95)", duration: 0.4, yoyo: true, repeat: 1, ease: "power1.inOut" },
             "-=0.3"
         );
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
             start: "top 25%",
             toggleActions: "play none none reverse",
             markers: true,
-            scrub:2
+            scrub: 2
         }
     });
 
@@ -273,12 +273,12 @@ document.addEventListener('DOMContentLoaded', () => {
     )
         .fromTo(".nom",
             { y: 0, rotate: 0, scale: 1 }, // idem
-            { y: -90, duration: 0.1,scale:1.1, ease: "power2.inOut" }, 0
+            { y: -90, duration: 0.1, scale: 1.1, ease: "power2.inOut" }, 0
         );
 
-      
-      const logiciel_projet = document.querySelectorAll(".logiciel_projet");
-      gsap.timeline({
+
+    const logiciel_projet = document.querySelectorAll(".logiciel_projet");
+    gsap.timeline({
         scrollTrigger: {
             trigger: "#logiciel_prof",
             start: "top 60%",
@@ -289,9 +289,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })
         .fromTo(logiciel_projet,
             { y: 20, opacity: 0 },
-            { y: 0, opacity: 1, duration: 0.5,stagger:0.5, ease: "power2.out" }
+            { y: 0, opacity: 1, duration: 0.5, stagger: 0.5, ease: "power2.out" }
         )
-    
+
 });
 
 

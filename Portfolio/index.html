@@ -62,7 +62,7 @@
       <img src="./media/moi.png" alt="photo de moi" class="photo_moi">
     </section>
     <section id="propos1" class="container my-5">
-      <h2 class=" ml-5 text-center impo " id="profil">À PROPOS DE MOI</h2>
+      <h2 class=" ml-5 text-center propos" id="profil">À PROPOS DE <span class="moi">MOI</span></h2>
       <div class="mt-5 container-propos">
         <p class="information ">
           Développeur enthousiaste, je souhaite rejoindre une équipe où mes <span class="texte_apro">compétences en
@@ -80,11 +80,11 @@
     <section id="projects" class="container my-5 container-projets mt-5">
       <div id="app">
 
-        <h2 class="mt-5 impo text-center phone_project">PROJETS</h2>
+        <h2 class="mt-5 impo text-center phone_project">MES PROJETS</h2>
         <div class="mt-5 container projects">
           <div class="text-center categories mt-5">
             <div class="display_categories">
-              <h2 class="mt-5 impo text-center pc_project">PROJETS</h2>
+              <h2 class="mt-5 impo text-center pc_project">MES PROJETS</h2>
               <p class="categorie " v-for="cat in categories" :key="cat.id" :class="{ active: activeCat === cat.id }"
                 @click="setActive(cat.id)">
                 {{ cat.name }}

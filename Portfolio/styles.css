@@ -727,12 +727,10 @@ object {
 }
 
 .orange {
-    color: var(--background);
     font-size: 2em;
     display: inline-block;
     mix-blend-mode: difference;
-    background-color: blue;
-
+    background-color: #00349E;
 }
 
 .numero {
@@ -753,6 +751,39 @@ object {
     font-weight: 500;
 }
 
+.propos {
+    font-size: 5rem;
+    color: var(--text);
+    font-family: "THUNDER";
+}
+
+.moi {
+    background-color: var(--text);
+    color: var(--background);
+    mix-blend-mode: difference;
+}
+
+.pc_project {
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+
+
+    .display_categories {
+        font-size: 0.6em;
+        flex-direction: row;
+    }
+
+    .pc_project {
+        display: none;
+    }
+
+    .phone_project {
+        display: block;
+    }
+
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -766,11 +797,19 @@ object {
 
     .display_categories {
         font-size: 0.6em;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .info_collab {
         flex-direction: column;
+    }
+
+    .pc_project {
+        display: none;
+    }
+
+    .phone_project {
+        display: block;
     }
 
 }
@@ -794,7 +833,9 @@ object {
         margin-top: 0;
     }
 
-
+    .phone_projet {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -813,5 +854,9 @@ object {
     .information_logiciels {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .phone_projet {
+        display: block;
     }
 }
