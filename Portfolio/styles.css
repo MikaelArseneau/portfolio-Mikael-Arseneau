@@ -6,17 +6,19 @@
     --secondary: #ed6a5a;
 }
 
-/* importation de la font*/
+/* importation de la font outfit*/
 @font-face {
-    font-family: "Thunder";
+    font-family: "outfit";
     src: url(./media/font/Outfit-VariableFont_wght.ttf) format("truetype");
 }
 
+/* importation de la font inter*/
 @font-face {
     font-family: "inter";
     src: url(./media/font/Inter.ttf) format("truetype");
 }
 
+/* importation de la font instrument*/
 @font-face {
     font-family: "Instrument";
     src: url(./media/font/Instrument.ttf) format("truetype");
@@ -28,8 +30,9 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+    font-family: "inter";
 }
+
 
 /* mettre un boule qui suit le mouvement de la souris a travers le projet*/
 .cursor {
@@ -52,7 +55,7 @@
 nav .navbar-brand {
     color: var(--secondary);
     font-size: 1rem;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit";
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -67,7 +70,7 @@ nav .nav-link {
     font-size: 1.2rem;
     margin: 0 1rem;
     text-transform: lowercase;
-    font-family: "Thunder", sans-serif;
+    font-family: "inter";
     font-weight: bolder;
     letter-spacing: 0.1rem;
 }
@@ -95,7 +98,7 @@ nav .navbar-toggler:focus {
     background-color: var(--secondary);
 }
 
-
+/* fin du header */
 
 /* mettre le background sur tout le site*/
 main {
@@ -108,6 +111,7 @@ main {
     position: absolute;
 }
 
+/* section acceuil qui est un display flex en column qui prend toute la hauteur de la page */
 .accueil-container {
     display: flex;
     flex-direction: column;
@@ -120,22 +124,23 @@ main {
 
 }
 
+/* affiche du nom qui s'affiche a gauche  qui a un petit text-shadow*/
 .titre {
     font-size: 10rem;
     text-align: left;
     color: var(--text);
     text-shadow: 3px 3px 3px var(--background);
-    font-family: "Thunder", sans-serif;
     font-weight: 700;
     margin-bottom: 1rem;
     mix-blend-mode: difference;
     letter-spacing: -8px;
 }
 
+/* fin du header */
 .prenom,
 .nom {
     display: inline-block;
-
+    font-family: "outfit";
 }
 
 h2 sub {
@@ -158,7 +163,7 @@ h2 sub {
     align-self: flex-start;
     color: var(--secondary);
     margin-bottom: 2rem;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit", sans-serif;
 
 }
 
@@ -169,7 +174,7 @@ h2 sub {
     text-transform: uppercase;
     color: var(--text);
     mix-blend-mode: difference;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit", sans-serif;
     margin-bottom: 1rem;
     text-align: left;
     text-shadow: 3px 3px 3px var(--background);
@@ -181,7 +186,7 @@ h2 sub {
     text-transform: uppercase;
     color: var(--text);
     mix-blend-mode: difference;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit", sans-serif;
     margin-bottom: 1rem;
     text-align: center;
     text-shadow: 3px 3px 3px 0px var(--background);
@@ -420,10 +425,11 @@ h2 sub {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit";
     font-weight: bolder;
     transition: 0.5s all ease-in-out;
     mix-blend-mode: difference;
+    letter-spacing: 0.03em;
 }
 
 .logo_logiciel {
@@ -458,7 +464,7 @@ h2 sub {
 
 .texte_contact {
     font-size: 1.2rem;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit", sans-serif;
     color: var(--text);
     text-align: center;
     mix-blend-mode: difference;
@@ -470,7 +476,7 @@ h2 sub {
     color: var(--text);
 
     text-align: center;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit", sans-serif;
     height: auto;
 
 }
@@ -490,7 +496,7 @@ h2 sub {
     padding: 2rem;
     border-radius: 10px;
     text-transform: uppercase;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit", sans-serif;
     font-weight: bolder;
     letter-spacing: 0.25rem;
     border: none;
@@ -604,7 +610,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
-    font-family: "Thunder", sans-serif;
+    font-family: "outfit", sans-serif;
     font-weight: bolder;
     color: var(--secondary);
 }
@@ -644,7 +650,7 @@ footer {
 }
 
 .container-proj h3 {
-    font-family: "thunder";
+    font-family: "outfit";
     font-weight: 600;
 }
 
@@ -746,7 +752,7 @@ object {
 }
 
 .logiciel_pro {
-    font-family: "Thunder";
+    font-family: "outfit";
     font-size: 1.2em;
     font-weight: 500;
 }
@@ -754,7 +760,7 @@ object {
 .propos {
     font-size: 5rem;
     color: var(--text);
-    font-family: "THUNDER";
+    font-family: "outfit";
 }
 
 .moi {
