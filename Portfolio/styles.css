@@ -132,7 +132,6 @@ main {
     text-shadow: 3px 3px 3px var(--background);
     font-weight: 700;
     margin-bottom: 1rem;
-    mix-blend-mode: difference;
     letter-spacing: -8px;
 }
 
@@ -140,20 +139,7 @@ main {
 .prenom,
 .nom {
     display: inline-block;
-    font-family: "outfit";
-}
-
-h2 sub {
-    font-family: "Playfair Display", serif;
-    font-size: 0.3em;
-    position: relative;
-    margin-left: 0.15em;
-    opacity: 0.8;
-    letter-spacing: 0.03em;
-    top: 0.5em;
-    color: var(--secondary);
-    mix-blend-mode: difference;
-    text-decoration-line: none;
+    font-family: "inter";
 }
 
 .info {
@@ -163,7 +149,7 @@ h2 sub {
     align-self: flex-start;
     color: var(--secondary);
     margin-bottom: 2rem;
-    font-family: "outfit", sans-serif;
+    font-family: "inter";
 
 }
 
