@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeCat: 'tous',
                 categories: [
                     { id: 'tous', name: 'Tous' },
-                    { id: 'web', name: 'Production web' },
+                    { id: 'web', name: 'Web' },
                     { id: 'montage', name: 'Montage visuelle' },
                     { id: 'troisDimension', name: '3D' }
                 ],

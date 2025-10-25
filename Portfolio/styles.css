@@ -249,18 +249,18 @@ h2 sub {
 .display_categories {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
 
 }
 
 .categorie {
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-family: "inter";
     font-weight: bolder;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.1rem;
     transition: 1s all ease;
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text);
     mix-blend-mode: difference;
     text-align: right;
@@ -765,6 +765,14 @@ object {
 
 .pc_project {
     font-size: 4rem;
+}
+
+.container-contact {
+    margin-top: 15rem;
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 1200px) {
