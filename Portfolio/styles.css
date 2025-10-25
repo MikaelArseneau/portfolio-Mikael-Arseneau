@@ -730,7 +730,7 @@ object {
     font-size: 2em;
     display: inline-block;
     mix-blend-mode: difference;
-    background-color: #00349E;
+    background-color: #087B8B;
 }
 
 .numero {
@@ -783,6 +783,9 @@ object {
         display: block;
     }
 
+    .all-projet {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -812,6 +815,9 @@ object {
         display: block;
     }
 
+    .all-projet {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 700px) {

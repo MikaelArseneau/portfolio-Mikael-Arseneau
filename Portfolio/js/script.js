@@ -269,11 +269,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tlnom.fromTo(".prenom",
         { y: 0, rotate: 0, scale: 1 }, // au début droit et normal
-        { y: 60, scale: 1.05, duration: 0.1, ease: "power2.inOut" }, 0
+        { y: 60, duration: 0.6, ease: "power2.inOut" }, 0
     )
         .fromTo(".nom",
             { y: 0, rotate: 0, scale: 1 }, // idem
-            { y: -90, duration: 0.1, scale: 1.1, ease: "power2.inOut" }, 0
+            { y: 90, duration: 0.5, ease: "power2.inOut" }, 0
         );
 
 
@@ -291,8 +291,21 @@ document.addEventListener('DOMContentLoaded', () => {
             { y: 20, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.5, stagger: 0.5, ease: "power2.out" }
         )
+    const collab = document.querySelectorAll(".collab");
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#colaboration",
+            start: "top 60%",
+            toggleActions: "play none none reverse",
 
+        }
+    })
+        .fromTo(collab,
+            { z: 20, opacity: 0, color: "#ed6a5a" },
+            { z: 0, opacity: 1, duration: 0.5, stagger: 0.2, ease: "power2.out", color: "#FFFFFF" }
+        )
 });
+
 
 
 
