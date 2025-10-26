@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.timeline({
         scrollTrigger: {
             trigger: "#propos1",
-            start: "top 80%",
+            start: "top 60%",
             toggleActions: "play none none reverse",
 
         }

@@ -382,6 +382,9 @@ main {
 
 /* section interets qui contiendra les logiciel qui prend 100% du width*/
 .container-interets {
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     width: 100%;
 }
 
@@ -513,7 +516,7 @@ main {
     background-color: #087B8B;
 }
 
-
+/* texte de contact qui sera centrer avec une font outfit et un mix-blend-mode difference*/
 .texte_contact {
     font-size: 1.2rem;
     font-family: "outfit", sans-serif;
