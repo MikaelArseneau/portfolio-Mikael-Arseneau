@@ -179,8 +179,12 @@ main {
     text-decoration: underline;
 }
 
+#propos1 {
+    margin-top: 10rem;
+}
+
 .container-propos {
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: auto;
     position: relative;
     border-radius: 10px;
@@ -205,10 +209,9 @@ main {
 }
 
 .container-projets {
-    margin-top: 5em;
+    margin-top: 11em;
     height: auto;
     position: relative;
-    width: 100%;
 
 }
 
@@ -272,7 +275,6 @@ main {
     text-decoration: underline;
     text-underline-offset: 10px;
 }
-
 
 
 .projects {

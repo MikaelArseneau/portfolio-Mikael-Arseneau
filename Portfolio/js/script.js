@@ -304,6 +304,21 @@ document.addEventListener('DOMContentLoaded', () => {
             { z: 20, opacity: 0, color: "#ed6a5a" },
             { z: 0, opacity: 1, duration: 0.5, stagger: 0.2, ease: "power2.out", color: "#FFFFFF" }
         )
+    const propos = document.querySelectorAll(".propos");
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: "#propos1",
+            start: "top 60%",
+            toggleActions: "play none none reverse",
+            markers: true,
+            scrub: 2,
+
+        }
+    })
+        .fromTo(propos,
+            { x: 0, scale: 1 },
+            { x: 100, duration: 0.5, stagger: 0.2, ease: "power2.out" }
+        )
 });
 
 
