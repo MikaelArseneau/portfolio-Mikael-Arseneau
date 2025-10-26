@@ -1,19 +1,25 @@
+//impoort gsap et plugins
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
 document.addEventListener('DOMContentLoaded', () => {
+    //creation de lapp vue
     const app = Vue.createApp({
         data() {
             return {
+                //mettre la categorie active par defaut a tous
                 activeCat: 'tous',
+                //les categories de projet
                 categories: [
                     { id: 'tous', name: 'Tous' },
                     { id: 'web', name: 'Web' },
                     { id: 'montage', name: 'Montage visuelle' },
                     { id: 'troisDimension', name: '3D' }
                 ],
+                //les projets
                 projects: []
             };
         },
+        //charger les projets depuis le fichier JSON
         mounted() {
             fetch('../project.json')
                 .then(response => response.json())
@@ -24,13 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 .catch(error => console.error('Erreur de chargement des projets:', error));
         },
         methods: {
+            //changer la categorie active lorsqu'on clique sur un bouton
             setActive(categories) {
                 this.activeCat = categories;
             }
         }
     });
-
+    //monter l app vue
     app.mount('#app');
+    // Animation GSAP pour la section Logiciels
     const logiciels = document.querySelectorAll(".logiciel");
     const logo = document.querySelectorAll(".logo_logiciel");
     const int_titre = document.querySelector("#interet_titre");
@@ -62,11 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { opacity: 0 },
         { x: 0, opacity: 1, duration: 0.2, stagger: 0.1, ease: "power2.out" }
     );
+    // Curseur personnalisé
     var cursor = document.getElementById("cursor");
     document.body.addEventListener("mousemove", function (e) {
         cursor.style.left = e.clientX + "px",
             cursor.style.top = e.clientY + "px";
     });
+
+    // Mettre à jour l'année dans le pied de page
     document.getElementById("year").innerHTML = new Date().getFullYear();
     // Section À propos
     const profilTitre = document.querySelector("#profil");
@@ -213,6 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 stagger: 0.4,
             }
         );
+    // Section Projets
     const projet = document.querySelector("#projects");
     const cat = document.querySelector(".display_categories");
     const cards = document.querySelectorAll(".card");

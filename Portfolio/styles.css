@@ -142,6 +142,7 @@ main {
     font-family: "inter";
 }
 
+/* info au-dessus le nom qui est aligner a gauche*/
 .info {
     font-size: 1.5rem;
     text-align: left;
@@ -150,51 +151,48 @@ main {
     color: var(--secondary);
     margin-bottom: 2rem;
     font-family: "inter";
-
 }
 
 .photo_moi {}
 
+/* classe pour les titre dans la page */
 .impo {
-    font-size: 3em;
+    font-size: 4em;
     text-transform: uppercase;
     color: var(--text);
     mix-blend-mode: difference;
-    font-family: "outfit", sans-serif;
+    font-family: "inter", sans-serif;
     margin-bottom: 1rem;
     text-align: left;
     text-shadow: 3px 3px 3px var(--background);
     text-decoration: none;
 }
 
-.impo_projet {
-    font-size: 3em;
-    text-transform: uppercase;
-    color: var(--text);
-    mix-blend-mode: difference;
-    font-family: "outfit", sans-serif;
-    margin-bottom: 1rem;
-    text-align: center;
-    text-shadow: 3px 3px 3px 0px var(--background);
-    text-decoration: underline;
-}
-
 #propos1 {
     margin-top: 10rem;
 }
 
+/* style pour le titre a propos de moi au debut de la section a propos*/
+.propos {
+    font-size: 5rem;
+    color: var(--text);
+    font-family: "outfit";
+}
+
+/* section a propos qui sera animer avec gsap, elle sera centrer. Elle affiche un petite descirption de moi*/
 .container-propos {
     margin-top: 5rem;
     width: auto;
     position: relative;
     border-radius: 10px;
     padding: 64px;
-    box-shadow: 5px 5px 15px 5px var(--text);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-
+/* texte qui va etre dans la section a propos*/
+/* va text vas etre blanc avec du letter-spacing et aligner a gauche*/
 .information {
     text-align: left;
     position: relative;
@@ -205,41 +203,41 @@ main {
     line-height: 1.6;
     color: var(--text);
     mix-blend-mode: difference;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.2px;
 }
 
+/* classe pour surligner moi dans a propos*/
+.moi {
+    background-color: var(--text);
+    color: #0f172a;
+    mix-blend-mode: difference;
+}
+
+
+/* section mes projets qui va contenir les projets avec un systeme de filtre par categorie*/
 .container-projets {
     margin-top: 11em;
     height: auto;
     position: relative;
-
 }
 
+/* titre pour la section projet sur téléhpne */
+.phone_project {
+    display: none;
+}
+
+/* titre pour la section projet sur pc */
+.pc_project {
+    font-size: 4rem;
+}
+
+/* classe qui va etre ajouter au mot special dans le html*/
 .texte_apro {
     color: var(--secondary);
     font-weight: bold;
 }
 
-.categories {
-
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: var(--text);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 2rem;
-    mix-blend-mode: difference;
-
-}
-
-.tous {
-    color: var(--text);
-    cursor: pointer;
-    transition: 1s all ease;
-}
-
+/* section des categories qui va etre en display flex en column avec un gap de 3rem et centrer*/
 .display_categories {
     display: flex;
     flex-direction: column;
@@ -248,6 +246,7 @@ main {
 
 }
 
+/* afiicher les catérogie du js dans un display flex en column sur pc et plustard en row sur téléphone*/
 .categorie {
     text-transform: capitalize;
     font-family: "inter";
@@ -264,19 +263,21 @@ main {
 
 }
 
+/* au hover sur les categorie elle change de couleur et ajoute un curseur pointer*/
 .categorie:hover {
     color: var(--secondary);
     cursor: pointer;
     transition: 1s all ease;
 }
 
+/* classe active pour la categorie selectionner qui va souligner le texte et changer la couleur*/
 .active {
     color: var(--secondary);
     text-decoration: underline;
     text-underline-offset: 10px;
 }
 
-
+/* section qui contient les projets en display flex avec un gap de 2em et qui centre les projets avec un wrap qui fais plusieurs lignes*/
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -303,6 +304,7 @@ main {
 
 }
 
+/* section qui contient tous les projets et les catégorie en display flex*/
 .all-projet {
     margin-top: 6em;
     display: flex;
@@ -318,15 +320,9 @@ main {
 
 }
 
-.card-img {
-    height: 200px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
-    opacity: 0.8;
-}
+/* section des cartes*/
 
+/* chaque projet sera mis en cartes qui auront des animations lors du hover */
 .card {
     height: 100%;
     width: 300px;
@@ -339,6 +335,17 @@ main {
     cursor: pointer;
 }
 
+/* image de chaque cartes de projet qui augmentera la taille de l'image au hover*/
+.card-img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+/* image de chaque cartes de projet qui augmentera la taille de l'image au hover*/
 .card:hover .card-img {
     scale: 1.1;
     filter: brightness(50%);
@@ -347,15 +354,16 @@ main {
     cursor: pointer;
 }
 
+/* titre de chaque carte de projet qui apparaitra au hover*/
 .card .card-title {
 
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
-
 }
 
+/* titre de chaque carte de projet qui apparaitra au hover*/
 .card:hover .card-title {
     color: var(--secondary);
     position: relative;
@@ -370,23 +378,16 @@ main {
     cursor: pointer;
 }
 
+
+
+/* section interets qui contiendra les logiciel qui prend 100% du width*/
 .container-interets {
     width: 100%;
 }
 
-.container-contact {
-    width: 50vw;
-    margin: auto;
 
-}
 
-.information_display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-}
-
+/* section logiciel qui contiendra les logiciel*/
 .container-logiciel {
     margin-top: 15rem;
     height: auto;
@@ -396,6 +397,7 @@ main {
 
 }
 
+/* display flex pour afficher les logiciel en ligne avec un gap de 2em et centrer les logiciel*/
 .display_logiciel {
     display: flex;
     flex-direction: row;
@@ -407,8 +409,15 @@ main {
 
 }
 
+/* logo des logiciel avec une taille de 64px par 64px et un object-fit contain pour garder les proportions*/
+.logo_logiciel {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
 
-
+/* chaque logiciel sera en display flex en column centrer avec une font outfit bolder et un mix-blend-mode difference*/
 .logiciel {
     display: flex;
     flex-direction: column;
@@ -420,13 +429,7 @@ main {
     letter-spacing: 0.03em;
 }
 
-.logo_logiciel {
-    height: 64px;
-    width: 64px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
-}
-
+/* logo des logiciel avec une taille de 64px par 64px et un object-fit contain pour garder les proportions*/
 .logo_logiciel_projet {
     height: 64px;
     width: 64px;
@@ -434,21 +437,82 @@ main {
     margin-bottom: 0.5rem;
 }
 
+
+/* au hover sur les logiciel ils changent de couleur et le curseur devient none*/
 .logiciel:hover {
     color: var(--secondary);
     cursor: none;
     transition: 0.5s all ease-in-out;
 }
 
-.phone_project {
-    display: none;
+/* section interets qui contiendra les logiciel qui prend 100% du width*/
+.container-interets {
+    position: relative;
+    margin-top: 15rem;
+    color: var(--text);
+
+    text-align: center;
+    font-family: "outfit", sans-serif;
+    height: auto;
 }
 
+
+/* section contact qui contiendra les info de contact*/
+.container-contact {
+    margin-top: 15rem;
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.container-contact {
+    width: 50vw;
+    margin: auto;
+
+}
+
+/* display flex pour afficher les info de contact en column avec un gap de 2em et centrer les info*/
+.information_display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+
+/* cv qui sera un bouton qui m'envoie un courriel au hover il part une animation*/
+.cv {
+    box-shadow: 5px 5px 15px 5px var(--background);
+    padding: 2rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "inter", sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    letter-spacing: 0.25rem;
+    border: none;
+    transition: 1s all ease-in-out;
+    background-color: transparent;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+/* au hover sur le cv il change de couleur et le background devient la couleur secondaire*/
 .container-contact .cv:hover {
     background-color: var(--secondary);
     color: var(--text);
 
 }
+
+/* classe pour surligner unmot en différence*/
+.orange {
+    font-size: 2em;
+    display: inline-block;
+    mix-blend-mode: difference;
+    background-color: #087B8B;
+}
+
 
 .texte_contact {
     font-size: 1.2rem;
@@ -458,47 +522,15 @@ main {
     mix-blend-mode: difference;
 }
 
-.container-interets {
-    position: relative;
-    margin-top: 15rem;
-    color: var(--text);
 
-    text-align: center;
-    font-family: "outfit", sans-serif;
-    height: auto;
 
-}
 
-.container-footer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 3em;
 
-}
 
-.cv {
-    box-shadow: 5px 5px 15px 5px var(--background);
-    color: var(--text);
-    padding: 2rem;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-family: "outfit", sans-serif;
-    font-weight: bolder;
-    letter-spacing: 0.25rem;
-    border: none;
-    transition: 1s all ease-in-out;
-    background-color: transparent;
-    color: var(--secondary);
-}
 
-svg:hover {
-    fill: var(--secondary);
-    cursor: pointer;
-    transition: 0.5s all ease-in-out;
-}
 
+
+/* footer qui prendra toute la largeur en bas de page avec un background couleur primaire et du texte centrer*/
 footer {
     background-color: #D9CCB6;
     color: var(--secondary);
@@ -513,25 +545,24 @@ footer {
     font-weight: 400;
 }
 
-.image-container {
-    display: flex;
-    /* Alignement horizontal */
-    gap: 20px;
-    /* Espacement entre les images */
-    overflow: hidden;
-    /* Pour cacher le débordement */
+/* container pour les icone du footer en display flex avec un gap de 3em et centrer les icones*/
+.container-footer {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+
 }
 
-.image-projet img {
-    width: 400px;
-    /* Taille de chaque image */
-    height: auto;
+/* svg qui change de couleur au hover*/
+svg:hover {
+    fill: var(--secondary);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
 }
 
-.image-projet:hover {
-    transform: scale(1.05);
-}
+/* section detail projet qui contiendra les info de chaque projet*/
 
 .container-propos-projet {
     margin-top: -2rem;
@@ -582,6 +613,8 @@ footer {
     font-family: "inter";
 }
 
+
+
 .information_logiciels {
     display: flex;
     flex-direction: row;
@@ -591,6 +624,7 @@ footer {
     margin-top: 1rem;
 }
 
+/* information de collaboration qui sera en display flex en row avec un gap de 1rem et centrer les info*/
 .info_collab {
     display: flex;
     flex-direction: row;
@@ -603,6 +637,7 @@ footer {
     color: var(--secondary);
 }
 
+/* image du projet qui prendra toute la largeur avec un max height de 70vh et un object-fit cover pour garder les proportions*/
 .img_pro img {
     top: 0;
     height: 110%;
@@ -613,6 +648,7 @@ footer {
     filter: brightness(90%);
 }
 
+/* image du projet qui prendra 50vh de height et un margin top et bottom de 2em*/
 .img_pro {
     height: 50vh;
     margin-top: 2em;
@@ -620,6 +656,7 @@ footer {
 
 }
 
+/* style pour le container des differentes section du projet*/
 .container-proj {
     width: 60vw;
     margin-bottom: 5em;
@@ -630,6 +667,7 @@ footer {
     letter-spacing: 0.1px;
 }
 
+/* style pour le texte des differentes section du projet*/
 .container-proj p {
     color: var(--text);
 
@@ -637,16 +675,19 @@ footer {
 
 }
 
+/* style pour les titre des differentes section du projet*/
 .container-proj h3 {
     font-family: "outfit";
     font-weight: 600;
 }
 
+/* style pour les titre des differentes section du projet*/
 .processus {
     color: var(--text);
     mix-blend-mode: difference;
 }
 
+/* style pour le lien de collaboration*/
 .collab {
     color: var(--text);
     mix-blend-mode: difference;
@@ -658,6 +699,7 @@ footer {
     color: var(--secondary);
 }
 
+/* image du projet qui prendra toute la largeur avec un max height de 70vh et un object-fit contain pour garder les proportions*/
 .image_projet {
     margin-top: 2em;
     width: 100%;
@@ -671,6 +713,7 @@ footer {
     object-position: 0;
 }
 
+/* style pour le texte en a propos de moi dans la section a propos*/
 a.texte_apro {
     text-underline-offset: 0.5em;
     font-size: 1.5em;
@@ -679,7 +722,6 @@ a.texte_apro {
 .projet-container {
     margin-top: 8em;
     margin-bottom: 5em;
-
 }
 
 object {
@@ -692,6 +734,7 @@ object {
     font-size: 1.6em;
 }
 
+/* section autre projet qui contiendra les autre projet en display flex en column centrer*/
 .autre_projet {
     margin-top: 10em;
     display: flex;
@@ -703,6 +746,7 @@ object {
 
 }
 
+/* display flex pour afficher les autre projet en ligne avec un gap de 1.5em et centrer les projet*/
 .display_projet {
     margin-top: 1em;
     display: flex;
@@ -711,6 +755,7 @@ object {
     flex-wrap: wrap;
 }
 
+/* style des lien des autre projet*/
 .display_projet a {
     font-family: "Instrument";
     font-size: 1.5em;
@@ -720,18 +765,8 @@ object {
     cursor: pointer;
 }
 
-.orange {
-    font-size: 2em;
-    display: inline-block;
-    mix-blend-mode: difference;
-    background-color: #087B8B;
-}
 
-.numero {
-    font-family: "Instrument";
-    font-size: 0.6em;
-}
-
+/* chaque logiciel sera en display flex en column centrer avec une font outfit bolder et un mix-blend-mode difference*/
 .logiciel_projet {
     display: flex;
     flex-direction: column;
@@ -745,30 +780,9 @@ object {
     font-weight: 500;
 }
 
-.propos {
-    font-size: 5rem;
-    color: var(--text);
-    font-family: "outfit";
-}
 
-.moi {
-    background-color: var(--text);
-    color: var(--background);
-    mix-blend-mode: difference;
-}
 
-.pc_project {
-    font-size: 4rem;
-}
-
-.container-contact {
-    margin-top: 15rem;
-    height: auto;
-    position: relative;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
+/* responsive design pour les differentes tailles d'ecran*/
 @media only screen and (max-width: 1200px) {
 
 
