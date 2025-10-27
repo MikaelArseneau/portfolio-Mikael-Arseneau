@@ -1,15 +1,53 @@
 [
-    {
-        "id": 1,
+     {
+        "id": 0,
         "title": "Métrage",
         "categorie": "web",
         "images": [
             "./media/metrage_final_pc.png"
         ],
-        "dossier": "metrage.html"
+        "dossier": "metrage.html",
+        "introduction":"Métrage est un site de critiques consacré à la cinématographie sous toutes ses formes : <spanclass='texte_apro'>films,séries et courts métrages. </span>Chaque critique a été rédigée avec soin et passion.",
+        "objectif":"On voulait créer un site qui parle de cinéma avec cœur. Avant même de penser au design, on arassemblé des images, des couleurs et des styles qui nous inspiraient. Le <spanclass='texte_apro'>moodboard</span> nous a aidés àtrouver l'ambiance qu'on voulait : quelque chose de <span class='texte_apro'>simple, chaleureux et passionné </span>. Métrage, c'estavant tout une envie de partager notre amour pour les films, les séries et les courts métrages.",
+        "role":"Développeur web",
+        "processus_creation": {
+            "processus": {
+                "texte": "On voulait créer un site qui parle de cinéma avec cœur. Avant même de penser au design, on a rassemblé des images, des couleurs et des styles qui nous inspiraient. Le <span class='texte_apro'>moodboard</span> nous a aidés à trouver l’ambiance qu’on voulait : quelque chose de <span class='texte_apro'>simple, chaleureux et passionné </span>. Métrage, c’est avant tout une envie de partager notre amour pour les films, les séries et les courts métrages.",
+                "image": "./media/metrage_moodboard.png"
+            },
+            "design_interface": {
+                "titre": "Design de l'interface",
+                "texte": "Une fois l’ambiance trouvée, on est passés sur <span class='texte_apro'>Figma</span> pour donner vie à l’idée. On a pensé chaque page pour qu’elle soit agréable à lire et belle à parcourir. Le but, c’était que le <span class='texte_apro'>contenu respire</span>, que les critiques soient mises en valeur, et que le <span class='texte_apro'>visiteur sente cette passion </span> du cinéma dès les premières secondes. On a vraiment pris le temps de peaufiner les détails pour créer une expérience fluide et élégante.",
+                "image": "./media/metrage_wire_pc.png"
+            },
+            "developpement_programmation": {
+                "titre": "Développement et programmation",
+                "texte": "On a ensuite tout développé sur <span class='texte_apro'>WordPress</span>. C’était important pour nous d’avoir une base solide, mais aussi <span class='texte_apro'>facile à mettre à jour</span>. On a intégré le design, ajusté la navigation et testé plusieurs mises en page pour que tout fonctionne bien. C’était une étape très concrète — voir le site prendre vie petit à petit, c’était super motivant.",
+                "image": "./media/bb.png"
+            },
+            "optimisation": {
+                "titre": "Optimisation",
+                "texte": "Une fois le site terminé, on voulait qu’il soit rapide, clair et bien référencé. On a donc travaillé l’optimisation avec <span class='texte_apro'>Yoast SEO</span>, ajusté les textes et amélioré les performances. Le but, c’était que Métrage soit aussi agréable à explorer qu’à lire. On a peaufiné chaque détail pour que le site soit fluide, autant sur <span class='texte_apro'>ordi que sur mobile</span>.",
+                "image": "./media/contact_metrage.png"
+            }
+        },
+        "logiciels":[
+            {
+                "name":"WordPress",
+                "logo":"./media/wordpress.png"
+            },  {
+                "name":"Figma",
+                "logo":"./media/figma.png"
+            }
+
+        ],
+       "collab":["Rafael Angon Dubé","Alexandre Gendron"],
+       "cadre":"Académique - Web 4"
+
+             
     },
     {
-        "id": 2,
+        "id": 1,
         "title": "DIX 10",
         "categorie": "web",
         "images": [
@@ -18,7 +56,7 @@
         "dossier": "dix10.html"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "Cœur de la montagne",
         "categorie": "montage",
         "images": [
@@ -27,16 +65,28 @@
         "dossier": "coeur.html"
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "Terminus",
         "categorie": "montage",
         "images": [
             "./media/terminus.jpg"
         ],
-        "dossier": "terminus.html"
+        "role":"Directeur photo",
+        "objectif": "Notre objectif était de démontrer les effets néfastes de l'alcool au volant à travers des <span class='texte_apro'>plans rapprochés,</span> en faisant progresser l'histoire grâce aux gros plans sur le personnage et au <span class='texte_apro'>travail sonore.</span>",      
+        "introduction": "Terminus est un court métrage que nous avons réalisé dans le cadre d'un projet de sensibilisation aux dangers de <span class='texte_apro'>l'alcool au volant.</span> Le film combine des prises de vue en <span class='texte_apro'>caméra normale</span> et en <span class='texte_apro'>macro</span> afin de créer une ambiance immersive et expressive",
+        "resultat": "Observer le résultat final - <br><a target='_blank' class='texte_apro' href='https://youtu.be/NqmFHKgiS5o'>Terminus</a>",
+        "cadre":"Académique - Réalité virtuelle",
+        "collab":["Mathieu Willet","Alexandre Gendron"],
+        "logiciels":[
+            {
+                "name":"Davinci",
+                "logo":"./media/davinci.png"
+            }
+
+        ]
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "Chasseur de crânes",
         "categorie": "troisDimension",
         "images": [
@@ -46,14 +96,18 @@
         "introduction": "Jouer en tant qu'aventurier pris au piège dans un donjon. Il devra <span class='texte_apro'>survivre</span> aux nombreux ennemis qui cherchent à le vaincre et atteindre la sortie en vie.",
         "objectif": "Le joueur est amené à traverser un donjon rempli de crânes maléfiques. Il doit se diriger vers la sortie en se battant contre les hordes d'ennemis. Dans les différentes zones du jeu, le joueur devra <span class='texte_apro'>vaincre les crânes en les touchant avec son arme (ou ses poings)</span> et devra se défendre face à leur assaut (projectile de feu) en <span class='texte_apro'>bloquant ou en esquivant.</span>",
         "role":"<span class='texte_apro'>Programmeur</span>",
-      "processus": "Observer le Github - <br><a target='_blank' class='texte_apro' href='https://github.com/AlexandreGendronCM/ProjetJeuVr_RealiteMixte.git'>Github</a>",
-      "resultat": "<p>Observer une vidéo du projet - </p><br><a target='_blank' class='texte_apro' href='https://youtu.be/T5DW5QJdduU'>Chasseur de crânes</a>",
-        "logiciel":""
+        "processus": "Observer le Github - <br><a target='_blank' class='texte_apro' href='https://github.com/AlexandreGendronCM/ProjetJeuVr_RealiteMixte.git'>Github</a>",
+        "resultat": "<p>Observer une vidéo du projet - </p><br><a target='_blank' class='texte_apro' href='https://youtu.be/T5DW5QJdduU'>Chasseur de crânes</a>",
+       "logiciels": [
+  { "nom": "Unity", "logo": "./media/unity.png" },
+  { "nom": "Github", "logo": "./media/git.png" }]
+  ,"contribution":["Mathieu Willet","Alexandre Gendron" ],
+  "cadre":"Académique - Réalité virtuelle"
 
 
     },
     {
-        "id": 6,
+        "id": 5,
         "title": "La Montée",
         "categorie": "montage",
         "images": [

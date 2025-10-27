@@ -1,6 +1,7 @@
 //impoort gsap et plugins
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
+
 document.addEventListener('DOMContentLoaded', () => {
     //creation de lapp vue
     const app = Vue.createApp({
@@ -16,24 +17,36 @@ document.addEventListener('DOMContentLoaded', () => {
                     { id: 'troisDimension', name: '3D' }
                 ],
                 //les projets
-                projects: []
+                projects: [],
+                selectedProjet: []
             };
         },
         //charger les projets depuis le fichier JSON
         mounted() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projId = parseInt(urlParams.get('proj-id'));
+
             fetch('../project.json')
                 .then(response => response.json())
                 .then(data => {
                     this.projects = data;
-                    console.log(this.projects)
+                    console.log(this.projects);
+                    // Chercher le projet correspondant
+                    this.selectedProjet = this.projects.find(p => p.id === projId);
+                    console.log(this.selectedProjet);
                 })
                 .catch(error => console.error('Erreur de chargement des projets:', error));
-        },
+            },
         methods: {
+            consoleProjet(){
+                console.log(this.selectedProjet)
+            },
+            
             //changer la categorie active lorsqu'on clique sur un bouton
             setActive(categories) {
                 this.activeCat = categories;
             }
+
         }
     });
     //monter l app vue
