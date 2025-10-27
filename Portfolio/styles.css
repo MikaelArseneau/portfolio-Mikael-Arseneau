@@ -423,10 +423,11 @@ main {
 /* chaque logiciel sera en display flex en column centrer avec une font outfit bolder et un mix-blend-mode difference*/
 .logiciel {
     display: flex;
+    color: #D9D9D9;
     flex-direction: column;
     align-items: center;
-    font-family: "outfit";
-    font-weight: bolder;
+    font-family: "inter";
+    font-weight: thin;
     transition: 0.5s all ease-in-out;
     mix-blend-mode: difference;
     letter-spacing: 0.03em;
@@ -486,19 +487,20 @@ main {
 
 /* cv qui sera un bouton qui m'envoie un courriel au hover il part une animation*/
 .cv {
-    box-shadow: 5px 5px 15px 5px var(--background);
-    padding: 2rem;
+
+    padding: 1rem;
     border-radius: 10px;
     text-transform: uppercase;
-    font-family: "inter", sans-serif;
+    font-family: "inter";
     font-weight: bolder;
-    font-size: 1.2rem;
-    letter-spacing: 0.25rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.20rem;
     border: none;
     transition: 1s all ease-in-out;
-    background-color: transparent;
-    color: var(--secondary);
+    background-color: #D9D9D9;
+    color: var(--background);
     cursor: pointer;
+    width: object-fit;
 }
 
 /* au hover sur le cv il change de couleur et le background devient la couleur secondaire*/
@@ -519,7 +521,7 @@ main {
 /* texte de contact qui sera centrer avec une font outfit et un mix-blend-mode difference*/
 .texte_contact {
     font-size: 1.2rem;
-    font-family: "outfit", sans-serif;
+    font-family: "inter";
     color: var(--text);
     text-align: center;
     mix-blend-mode: difference;
@@ -536,7 +538,7 @@ main {
 /* footer qui prendra toute la largeur en bas de page avec un background couleur primaire et du texte centrer*/
 footer {
     background-color: #D9CCB6;
-    color: var(--secondary);
+    color: var(--background);
     text-align: center;
     padding: 1rem;
     position: relative;
@@ -586,6 +588,7 @@ svg:hover {
     gap: 1rem;
 }
 
+/* display flex pour afficher les info du projet en row-reverse avec un gap de 1rem et centrer les info*/
 .display_proj {
     display: flex;
     flex-direction: row-reverse;
@@ -609,7 +612,7 @@ svg:hover {
 }
 
 
-
+/* info pro qui sera aligner a droite avec une font inter et une couleur secondaire*/
 .inf_pro {
     text-align: right;
     color: var(--secondary);
@@ -617,7 +620,7 @@ svg:hover {
 }
 
 
-
+/* information des logiciel qui sera en display flex en row avec un gap de 1rem et centrer les info*/
 .information_logiciels {
     display: flex;
     flex-direction: row;
@@ -786,7 +789,7 @@ object {
 
 
 /* responsive design pour les differentes tailles d'ecran*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
 
 
     .display_categories {
@@ -860,6 +863,28 @@ object {
 
     .phone_projet {
         display: block;
+    }
+
+    .card .card-title {
+        color: var(--secondary);
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        font-size: 2em;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-shadow: 5px 5px 5px var(--background);
+        object-fit: contain;
+        cursor: pointer;
+    }
+
+    .card .card-img {
+        scale: 1.1;
+        filter: brightness(50%);
+        opacity: 1;
+        transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
+        cursor: pointer;
     }
 }
 

@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
         )
         .fromTo(texteApro,
-            { color: "#ffffff" },
+            { color: "#E5E5E5" },
             {
                 color: "#ed6a5a",
                 duration: 0.8,
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
         .fromTo(texteAproObj,
-            { color: "#ffffff" },
+            { color: "#E5E5E5" },
             {
                 color: "#ed6a5a",
                 duration: 3,
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
         .fromTo(texteAproRole,
-            { color: "#ffffff" },
+            { color: "#E5E5E5" },
             {
                 color: "#ed6a5a",
                 duration: 0.6,
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
         .fromTo(texteAproPro,
-            { color: "#ffffff" },
+            { color: "#E5E5E5" },
             {
                 color: "#ed6a5a",
                 duration: 0.6,
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
         .fromTo(texteAproDesign,
-            { color: "#ffffff" },
+            { color: "#E5E5E5" },
             {
                 color: "#ed6a5a",
                 duration: 0.6,
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
         .fromTo(texteAproDev,
-            { color: "#ffffff" },
+            { color: "#E5E5E5" },
             {
                 color: "#ed6a5a",
                 duration: 0.6,
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
         .fromTo(texteAproOpti,
-            { color: "#ffffff" },
+            { color: "#E5E5E5" },
             {
                 color: "#ed6a5a",
                 duration: 2,
@@ -273,7 +273,6 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: "#title",
             start: "top 25%",
             toggleActions: "play none none reverse",
-            markers: true,
             scrub: 2
         }
     });
@@ -314,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
         .fromTo(collab,
             { z: 20, opacity: 0, color: "#ed6a5a" },
-            { z: 0, opacity: 1, duration: 0.5, stagger: 0.2, ease: "power2.out", color: "#FFFFFF" }
+            { z: 0, opacity: 1, duration: 0.5, stagger: 0.2, ease: "power2.out", color: "#E5E5E5" }
         )
     const propos = document.querySelectorAll(".propos");
     gsap.timeline({
@@ -322,7 +321,6 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: "#propos1",
             start: "top 60%",
             toggleActions: "play none none reverse",
-            markers: true,
             scrub: 2,
 
         }
