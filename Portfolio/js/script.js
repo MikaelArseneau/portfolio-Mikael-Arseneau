@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log(this.selectedProjet);
                 })
                 .catch(error => console.error('Erreur de chargement des projets:', error));
-            },
+        },
         methods: {
-            consoleProjet(){
+            consoleProjet() {
                 console.log(this.selectedProjet)
             },
-            
+
             //changer la categorie active lorsqu'on clique sur un bouton
             setActive(categories) {
                 this.activeCat = categories;
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gsap.timeline({
         scrollTrigger: {
-            trigger: "#logiciel",
+            trigger: "#projects",
             start: "top 50%",
             toggleActions: "play none none reverse",
 

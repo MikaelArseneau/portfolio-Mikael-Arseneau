@@ -60,7 +60,8 @@
         <section id="propos1" class="container my-5">
             <h2 class=" ml-5 text-center impo">Introduction</h2>
             <div class="mt-4 container-propos">
-                    <p class="information" v-if="selectedProjet && selectedProjet.introduction" v-html="selectedProjet.introduction"></p>
+                <p class="information" v-if="selectedProjet && selectedProjet.introduction"
+                    v-html="selectedProjet.introduction"></p>
                 </p>
             </div>
         </section>
@@ -68,7 +69,7 @@
         <section id="objectif" class="container my-5">
             <h2 class=" ml-5 mt-5 impo" id="objectif">Objectif</h2>
             <div class="mt-4 ml-5 container-proj">
-                <p class=" mb-5"v-if="selectedProjet && selectedProjet.objectif" v-html="selectedProjet.objectif"></p>
+                <p class=" mb-5" v-if="selectedProjet && selectedProjet.objectif" v-html="selectedProjet.objectif"></p>
             </div>
         </section>
         <!-- zone de role du projet-->
@@ -81,17 +82,48 @@
                 </p>
             </div>
         </section>
-<!-- zone de role du projet-->
-<section id="Processus" class="container my-5" v-if="selectedProjet.processus_creation">
-    <h2 class="ml-5 impo">Processus</h2>
-    <div class="mt-4 ml-5 container-proj">
-        <h3 class="processus">Conceptualisation</h3>
-        <p id="processus_texte" v-if="selectedProjet.processus_creation.processus">
-            <span v-html="selectedProjet.processus_creation.processus.texte"></span>
-        </p>
+        <!-- zone de resultat du projet-->
+        <section id="Processus2" class="container my-5" v-if="selectedProjet.processus">
+            <h2 class=" ml-5 impo ">Processus</h2>
+            <div class="mt-4 ml-5 container-proj">
+                <p class=" mb-5" v-if="selectedProjet && selectedProjet.processus" v-html="selectedProjet.processus">
+                </p>
 
-    </div>
-</section>
+            </div>
+        </section>
+        <!-- zone de role du projet-->
+        <section id="Processus" class="container my-5" v-if="selectedProjet.processus_creation">
+            <h2 class="ml-5 impo">Processus</h2>
+            <div class="mt-4 ml-5 container-proj">
+                <h3 class="processus">Conceptualisation</h3>
+                <p id="processus_texte" v-if="selectedProjet.processus_creation.processus">
+                <p v-html="selectedProjet.processus_creation.processus.texte"></p>
+                </p>
+                <img :src="selectedProjet.processus_creation.processus.image" class="image_projet"
+                    v-if="selectedProjet.processus_creation.processus.image">
+
+                <h3 class="processus mt-4">Design de l'interface</h3>
+                <p v-if="selectedProjet.processus_creation.processus">
+                <p v-html="selectedProjet.processus_creation.design_interface.texte"></p>
+                </p>
+                <img :src="selectedProjet.processus_creation.design_interface.image" class="image_projet"
+                    v-if="selectedProjet.processus_creation.design_interface.image">
+
+                <h3 class="processus mt-4">Développement et programmation</h3>
+                <p v-if="selectedProjet.processus_creation.developpement_programmation">
+                <p v-html="selectedProjet.processus_creation.developpement_programmation.texte"></p>
+                </p>
+                <img :src="selectedProjet.processus_creation.developpement_programmation.image" class="image_projet"
+                    v-if="selectedProjet.processus_creation.developpement_programmation.image">
+                <h3 class="processus mt-4">Optimisation</h3>
+
+                <p v-if="selectedProjet.processus_creation.optimisation">
+                <p v-html="selectedProjet.processus_creation.optimisation.texte"></p>
+                </p>
+                <img :src="selectedProjet.processus_creation.optimisation.image" class="image_projet"
+                    v-if="selectedProjet.processus_creation.optimisation.image">
+            </div>
+        </section>
 
 
 
@@ -99,10 +131,9 @@
         <!-- zone de resultat du projet-->
 
         <section id="Processus2" class="container my-5" v-if="selectedProjet.resultat">
-            <h2 class="ml-5 impo">Processus</h2>>
             <h2 class=" ml-5 impo ">Résultat</h2>
             <div class="mt-4 ml-5 container-proj">
-                <p class=" mb-5"v-if="selectedProjet && selectedProjet.resultat" v-html="selectedProjet.resultat"></p>
+                <p class=" mb-5" v-if="selectedProjet && selectedProjet.resultat" v-html="selectedProjet.resultat"></p>
 
             </div>
         </section>
@@ -128,7 +159,7 @@
                 <p class="information ">
                 <div class="info_collab">
                     <div class="collab" v-for="person in selectedProjet.collab">{{person}}</div>
-                  
+
                 </div>
                 </p>
             </div>

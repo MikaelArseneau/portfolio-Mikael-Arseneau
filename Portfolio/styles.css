@@ -164,7 +164,7 @@ main {
     font-family: "inter", sans-serif;
     margin-bottom: 1rem;
     text-align: left;
-    text-shadow: 3px 3px 3px var(--background);
+
     text-decoration: none;
 }
 
@@ -224,11 +224,14 @@ main {
 /* titre pour la section projet sur téléhpne */
 .phone_project {
     display: none;
+    font-size: 4rem;
+    color: var(--background);
 }
 
 /* titre pour la section projet sur pc */
 .pc_project {
     font-size: 4rem;
+    color: var(--background);
 }
 
 /* classe qui va etre ajouter au mot special dans le html*/
@@ -254,10 +257,10 @@ main {
     letter-spacing: 0.1rem;
     transition: 1s all ease;
     font-size: 1rem;
-    color: var(--text);
     mix-blend-mode: difference;
     text-align: right;
     display: flex;
+    color: var(--background);
     justify-content: flex-end;
     flex-direction: column;
 
