@@ -37,12 +37,20 @@
     },
     {
         "id": 5,
-        "title": "Chasseur de crâne",
+        "title": "Chasseur de crânes",
         "categorie": "troisDimension",
         "images": [
             "./media/chasseur.png"
         ],
-        "dossier": "chasseur.html"
+        "dossier": "chasseur.html",
+        "introduction": "Jouer en tant qu'aventurier pris au piège dans un donjon. Il devra <span class='texte_apro'>survivre</span> aux nombreux ennemis qui cherchent à le vaincre et atteindre la sortie en vie.",
+        "objectif": "Le joueur est amené à traverser un donjon rempli de crânes maléfiques. Il doit se diriger vers la sortie en se battant contre les hordes d'ennemis. Dans les différentes zones du jeu, le joueur devra <span class='texte_apro'>vaincre les crânes en les touchant avec son arme (ou ses poings)</span> et devra se défendre face à leur assaut (projectile de feu) en <span class='texte_apro'>bloquant ou en esquivant.</span>",
+        "role":"<span class='texte_apro'>Programmeur</span>",
+      "processus": "Observer le Github - <br><a target='_blank' class='texte_apro' href='https://github.com/AlexandreGendronCM/ProjetJeuVr_RealiteMixte.git'>Github</a>",
+      "resultat": "<p>Observer une vidéo du projet - </p><br><a target='_blank' class='texte_apro' href='https://youtu.be/T5DW5QJdduU'>Chasseur de crânes</a>",
+        "logiciel":""
+
+
     },
     {
         "id": 6,
