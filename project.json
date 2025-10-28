@@ -143,6 +143,8 @@
             "./media/montee.png"
         ],
         "role": "Directeur du projet",
+        "resultat": "<p><span class='texte_apro'>Pas encore disponible</span></p>",
+
         "objectif": "Créer une expérience immersive qui capture les émotions et les défis d'une <span class='texte_apro'>ascension en montagne,</span> en utilisant des techniques de narration visuelle et sonore pour immerger le spectateur dans le voyage.",
         "introduction": "La Montée est un projet interactif combinant <span class='texte_apro'>Max, TouchDesigner, Maya et Reaper.</span> L’œuvre permet à l’interacteur de toucher un <span class='texte_apro'>clavier MIDI</span>, de <span class='texte_apro'>bouger ses mains</span> ou de <span class='texte_apro'>parler</span> dans un micro, influençant ainsi en temps réel l'expérience visuelle et sonore devant lui",
         "logiciels": [
