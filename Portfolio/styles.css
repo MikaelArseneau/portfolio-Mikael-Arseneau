@@ -256,7 +256,7 @@ main {
     font-weight: bolder;
     letter-spacing: 0.1rem;
     transition: 1s all ease;
-    font-size: 1rem;
+    font-size: 1.3rem;
     mix-blend-mode: difference;
     text-align: right;
     display: flex;
@@ -289,6 +289,7 @@ main {
     position: relative;
     flex-grow: 1;
     align-items: flex-start;
+    flex-direction: row;
 }
 
 .fade-enter-active,
@@ -805,6 +806,28 @@ object {
     font-family: "inter", sans-serif;
 }
 
+.retour {
+
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "inter";
+    font-weight: bolder;
+    font-size: 0.9rem;
+    letter-spacing: 0.20rem;
+    border: none;
+    transition: 1s all ease-in-out;
+    background-color: var(--text);
+    color: var(--background);
+    cursor: pointer;
+    width: object-fit;
+}
+
+.retour:hover {
+    background-color: var(--secondary);
+    color: var(--text);
+
+}
 
 
 /* responsive design pour les differentes tailles d'ecran*/
@@ -812,8 +835,12 @@ object {
 
 
     .display_categories {
-        font-size: 0.6em;
         flex-direction: row;
+        margin: auto;
+        flex-grow: 2;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .pc_project {
@@ -826,125 +853,129 @@ object {
 
     .all-projet {
         margin-top: 0;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-
-    .titre {
-        font-size: 6rem;
+        margin-left: auto;
     }
 
-    .info {
-        font-size: 1.2rem;
+
+
+
+    @media only screen and (max-width: 1000px) {
+
+        .titre {
+            font-size: 6rem;
+        }
+
+        .info {
+            font-size: 1.2rem;
+        }
+
+        .display_categories {
+            font-size: 0.6em;
+            flex-direction: row;
+        }
+
+        .info_collab {
+            flex-direction: column;
+        }
+
+        .pc_project {
+            display: none;
+        }
+
+        .phone_project {
+            display: block;
+        }
+
+        .all-projet {
+            margin-top: 0;
+        }
+
+        .prenom,
+        .nom {
+            font-size: 10rem;
+
+        }
     }
 
-    .display_categories {
-        font-size: 0.6em;
-        flex-direction: row;
+    @media only screen and (max-width: 700px) {
+
+        .display_categories {
+            font-size: 0.6em;
+            flex-direction: row;
+        }
+
+        .pc_project {
+            display: none;
+        }
+
+        .phone_project {
+            display: block;
+        }
+
+        .all-projet {
+            margin-top: 0;
+        }
+
+        .phone_projet {
+            display: block;
+        }
+
+        .card .card-title {
+            color: var(--secondary);
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1;
+            font-size: 2em;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-shadow: 5px 5px 5px var(--background);
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        .card .card-img {
+            scale: 1.1;
+            filter: brightness(50%);
+            opacity: 1;
+            transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .prenom,
+        .nom {
+            font-size: 10rem;
+
+        }
     }
 
-    .info_collab {
-        flex-direction: column;
-    }
+    @media only screen and (max-width: 575px) {
 
-    .pc_project {
-        display: none;
-    }
+        .container-proj {
+            width: 95vw;
 
-    .phone_project {
-        display: block;
-    }
-
-    .all-projet {
-        margin-top: 0;
-    }
-
-    .prenom,
-    .nom {
-        font-size: 10rem;
-
-    }
-}
-
-@media only screen and (max-width: 700px) {
-
-    .display_categories {
-        font-size: 0.6em;
-        flex-direction: row;
-    }
-
-    .pc_project {
-        display: none;
-    }
-
-    .phone_project {
-        display: block;
-    }
-
-    .all-projet {
-        margin-top: 0;
-    }
-
-    .phone_projet {
-        display: block;
-    }
-
-    .card .card-title {
-        color: var(--secondary);
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 1;
-        font-size: 2em;
-        text-transform: uppercase;
-        cursor: pointer;
-        text-shadow: 5px 5px 5px var(--background);
-        object-fit: contain;
-        cursor: pointer;
-    }
-
-    .card .card-img {
-        scale: 1.1;
-        filter: brightness(50%);
-        opacity: 1;
-        transition: scale 0.5s ease-in-out, filter 0.1s ease-in-out, opacity 0.5s ease-in-out;
-        cursor: pointer;
-    }
-
-    .prenom,
-    .nom {
-        font-size: 10rem;
-
-    }
-}
-
-@media only screen and (max-width: 575px) {
-
-    .container-proj {
-        width: 95vw;
+        }
 
     }
 
-}
 
 
+    @media only screen and (max-width: 800px) {
 
-@media only screen and (max-width: 800px) {
+        .information_logiciels {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
 
-    .information_logiciels {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+        .phone_projet {
+            display: block;
+        }
 
-    .phone_projet {
-        display: block;
-    }
+        .prenom,
+        .nom {
+            font-size: 6.9rem;
+            letter-spacing: 0.01rem;
 
-    .prenom,
-    .nom {
-        font-size: 6.9rem;
-        letter-spacing: 0.01rem;
-
+        }
     }
 }
