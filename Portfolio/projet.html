@@ -67,7 +67,7 @@
         </section>
         <!-- zone de l'objectif du projet-->
         <section id="objectif" class="container my-5">
-            <h2 class=" ml-5 mt-5 impo" id="objectif">Objectif</h2>
+            <h2 class=" ml-5 mt-5 impo_projet" id="objectif">Objectif</h2>
             <div class="mt-4 ml-5 container-proj">
                 <p class=" mb-5" v-if="selectedProjet && selectedProjet.objectif" v-html="selectedProjet.objectif"></p>
             </div>
@@ -75,7 +75,7 @@
         <!-- zone de role du projet-->
 
         <section id="role" class="container my-5">
-            <h2 class=" ml-5 mt-5 impo">Rôle</h2>
+            <h2 class=" ml-5 mt-5 impo_projet">Rôle</h2>
             <div class="mt-4 ml-5 container-proj">
                 <p class=" mb-5">
                     <span class="texte_apro">{{selectedProjet.role}}</span>
@@ -84,7 +84,7 @@
         </section>
         <!-- zone de resultat du projet-->
         <section id="Processus2" class="container my-5" v-if="selectedProjet.processus">
-            <h2 class=" ml-5 impo ">Processus</h2>
+            <h2 class=" ml-5 impo_projet ">Processus</h2>
             <div class="mt-4 ml-5 container-proj">
                 <p class=" mb-5" v-if="selectedProjet && selectedProjet.processus" v-html="selectedProjet.processus">
                 </p>
@@ -93,7 +93,7 @@
         </section>
         <!-- zone de role du projet-->
         <section id="Processus" class="container my-5" v-if="selectedProjet.processus_creation">
-            <h2 class="ml-5 impo">Processus</h2>
+            <h2 class="ml-5 impo_projet">Processus</h2>
             <div class="mt-4 ml-5 container-proj">
                 <h3 class="processus">Conceptualisation</h3>
                 <p id="processus_texte" v-if="selectedProjet.processus_creation.processus">
@@ -131,7 +131,7 @@
         <!-- zone de resultat du projet-->
 
         <section id="Processus2" class="container my-5" v-if="selectedProjet.resultat">
-            <h2 class=" ml-5 impo ">Résultat</h2>
+            <h2 class=" ml-5 impo_projet ">Résultat</h2>
             <div class="mt-4 ml-5 container-proj">
                 <p class=" mb-5" v-if="selectedProjet && selectedProjet.resultat" v-html="selectedProjet.resultat"></p>
 
@@ -139,7 +139,7 @@
         </section>
         <!-- zone de logiciels du projet-->
         <section id="logiciel_prof" class="container my-5">
-            <h2 class=" ml-5 text-center impo">LOGICIELS UTILISÉS</h2>
+            <h2 class=" ml-5 text-center impo_projet">LOGICIELS UTILISÉS</h2>
             <div class="mt-4 container-propos">
                 <div class="information_logiciels">
                     <div class="logiciel_projet" v-for="logiciel in selectedProjet.logiciels">
@@ -154,7 +154,7 @@
         <!-- zone de contribution du projet-->
 
         <section id="colaboration" class="container my-5">
-            <h2 class=" ml-5 text-center impo">CONTRIBUTION</h2>
+            <h2 class=" ml-5 text-center impo_projet">CONTRIBUTION</h2>
             <div class="mt-4 container-propos">
                 <p class="information ">
                 <div class="info_collab">
@@ -166,7 +166,7 @@
         </section>
         <!-- zone de cadre du projet-->
         <section id="cadre" class="container my-5">
-            <h2 class=" ml-5 text-center impo">Dans le cadre</h2>
+            <h2 class=" ml-5 text-center impo_projet">Dans le cadre</h2>
             <div class="mt-4 container-propos">
                 <p class="information ">
                 <div class="info_collab">

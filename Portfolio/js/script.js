@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 categories: [
                     { id: 'tous', name: 'Tous' },
                     { id: 'web', name: 'Web' },
-                    { id: 'montage', name: 'Montage visuelle' },
+                    { id: 'montage', name: 'Montage' },
                     { id: 'troisDimension', name: '3D' }
                 ],
                 //les projets
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let tlnom = gsap.timeline({
         scrollTrigger: {
             trigger: "#title",
-            start: "top 25%",
+            start: "top 60%",
             toggleActions: "play none none reverse",
             scrub: 2
         }
@@ -293,11 +293,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tlnom.fromTo(".prenom",
         { y: 0, rotate: 0, scale: 1 }, // au début droit et normal
-        { y: 60, duration: 0.6, ease: "power2.inOut" }, 0
+        { y: 100, duration: 0.6, ease: "power2.inOut" }, 0
     )
         .fromTo(".nom",
             { y: 0, rotate: 0, scale: 1 }, // idem
-            { y: 90, duration: 0.5, ease: "power2.inOut" }, 0
+            { y: 180, duration: 0.5, ease: "power2.inOut" }, 0
         );
 
 
