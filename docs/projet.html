@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script src="js/script.js"></script>
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 
@@ -67,7 +67,7 @@
         </section>
         <!-- zone de l'objectif du projet-->
         <section id="objectif" class="container my-5">
-            <h2 class=" ml-5 mt-5 impo_projet" id="objectif">Objectif</h2>
+            <h2 class=" ml-5 mt-5 impo_projet">Objectif</h2>
             <div class="mt-4 ml-5 container-proj">
                 <p class=" mb-5" v-if="selectedProjet && selectedProjet.objectif" v-html="selectedProjet.objectif"></p>
             </div>
@@ -83,7 +83,7 @@
             </div>
         </section>
         <!-- zone de resultat du projet-->
-        <section id="Processus2" class="container my-5" v-if="selectedProjet.processus">
+        <section id="processus2" class="container my-5" v-if="selectedProjet.processus">
             <h2 class=" ml-5 impo_projet ">Processus</h2>
             <div class="mt-4 ml-5 container-proj">
                 <p class=" mb-5" v-if="selectedProjet && selectedProjet.processus" v-html="selectedProjet.processus">
@@ -92,7 +92,7 @@
             </div>
         </section>
         <!-- zone de role du projet-->
-        <section id="Processus" class="container my-5" v-if="selectedProjet.processus_creation">
+        <section id="processus" class="container my-5" v-if="selectedProjet.processus_creation">
             <h2 class="ml-5 impo_projet">Processus</h2>
             <div class="mt-4 ml-5 container-proj">
                 <h3 class="processus">Conceptualisation</h3>
@@ -130,7 +130,7 @@
 
         <!-- zone de resultat du projet-->
 
-        <section id="Processus2" class="container my-5" v-if="selectedProjet.resultat">
+        <section id="resultat" class="container my-5" v-if="selectedProjet.resultat">
             <h2 class=" ml-5 impo_projet ">Résultat</h2>
             <div class="mt-4 ml-5 container-proj">
                 <p class=" mb-5" v-if="selectedProjet && selectedProjet.resultat" v-html="selectedProjet.resultat"></p>
@@ -195,9 +195,7 @@
         </footer>
     </main>
 
-    <body>
-
-    </body>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

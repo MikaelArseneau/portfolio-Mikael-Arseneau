@@ -95,13 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Section À propos
     const profilTitre = document.querySelector("#profil");
     const profilText = document.querySelector(".container-propos");
-    const texteApro = document.querySelectorAll("#propos1 .texte_apro");
-    const texteAproObj = document.querySelectorAll("#objectif .texte_apro");
-    const texteAproRole = document.querySelectorAll("#role .texte_apro");
-    const texteAproPro = document.querySelectorAll("#processus_texte .texte_apro");
-    const texteAproDesign = document.querySelectorAll("#design_texte .texte_apro");
-    const texteAproDev = document.querySelectorAll("#dev_texte .texte_apro");
-    const texteAproOpti = document.querySelectorAll("#optimisation_texte .texte_apro");
+    const objectifTitre = document.querySelector("#objectif");
     gsap.timeline({
         scrollTrigger: {
             trigger: "#propos1",
@@ -118,134 +112,67 @@ document.addEventListener('DOMContentLoaded', () => {
             { x: 20, opacity: 0 },
             { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
         )
-        .fromTo(texteApro,
-            { color: "#E5E5E5" },
-            {
-                color: "#ed6a5a",
-                duration: 0.8,
-                ease: "power2.out",
-                stagger: 0.4,
-            }
-        );
-
     gsap.timeline({
         scrollTrigger: {
             trigger: "#objectif",
-            start: "top 80%",
+            start: "top 30%",
             toggleActions: "play none none reverse",
 
         }
     })
-
-        .fromTo(texteAproObj,
-            { color: "#E5E5E5" },
-            {
-                color: "#ed6a5a",
-                duration: 3,
-                ease: "power2.out",
-                stagger: 0.4,
-            }
-        );
+        .fromTo(objectifTitre,
+            { y: -20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
+        )
+    const role = document.querySelector("#role");
     gsap.timeline({
         scrollTrigger: {
             trigger: "#role",
-            start: "top 80%",
+            start: "top 50%",
             toggleActions: "play none none reverse",
-
         }
     })
-
-        .fromTo(texteAproRole,
-            { color: "#E5E5E5" },
-            {
-                color: "#ed6a5a",
-                duration: 0.6,
-                ease: "power2.out",
-                stagger: 0.4,
-            }
-        );
-
+        .fromTo(role,
+            { y: -20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
+        )
+    const processus2 = document.querySelector("#processus2");
     gsap.timeline({
         scrollTrigger: {
-            trigger: "#processus_texte",
-            start: "top 80%",
+            trigger: "#processus2", // ✅ même casse
+            start: "top 50%",
             toggleActions: "play none none reverse",
-
         }
     })
-
-        .fromTo(texteAproPro,
-            { color: "#E5E5E5" },
-            {
-                color: "#ed6a5a",
-                duration: 0.6,
-                ease: "power2.out",
-                stagger: 0.4,
-            }
+        .fromTo(processus2,
+            { y: -20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
         );
+
+    const processus = document.querySelector("#processus");
     gsap.timeline({
         scrollTrigger: {
-            trigger: "#design_texte",
-            start: "top 80%",
+            trigger: "#processus", // ✅ même casse
+            start: "top 50%",
             toggleActions: "play none none reverse",
-
+            markers: true,
         }
     })
-
-        .fromTo(texteAproDesign,
-            { color: "#E5E5E5" },
-            {
-                color: "#ed6a5a",
-                duration: 0.6,
-                ease: "power2.out",
-                stagger: 0.4,
-            }
+        .fromTo(processus,
+            { y: -20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
         );
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: "#dev_texte",
-            start: "top 80%",
-            toggleActions: "play none none reverse",
 
-        }
-    })
-
-        .fromTo(texteAproDev,
-            { color: "#E5E5E5" },
-            {
-                color: "#ed6a5a",
-                duration: 0.6,
-                ease: "power2.out",
-                stagger: 0.4,
-            }
-        );
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: "#optimisation_texte",
-            start: "top 80%",
-            toggleActions: "play none none reverse",
-
-        }
-    })
-
-        .fromTo(texteAproOpti,
-            { color: "#E5E5E5" },
-            {
-                color: "#ed6a5a",
-                duration: 2,
-                ease: "power2.out",
-                stagger: 0.4,
-            }
-        );
     // Section Projets
     const projet = document.querySelector("#projects");
     const cat = document.querySelector(".display_categories");
     const cards = document.querySelectorAll(".card");
 
+
     gsap.timeline({
         scrollTrigger: {
             trigger: "#projects",
-            start: "top 60%",
+            start: "top 20%",
             toggleActions: "play none none reverse",
 
         }

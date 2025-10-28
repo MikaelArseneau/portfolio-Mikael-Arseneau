@@ -615,7 +615,6 @@ svg:hover {
     font-size: 3em;
     text-transform: uppercase;
     color: var(--text);
-    mix-blend-mode: difference;
     font-family: "inter", sans-serif;
     margin-bottom: 1rem;
     text-align: left;
@@ -700,7 +699,7 @@ svg:hover {
 /* style pour les titre des differentes section du projet*/
 .processus {
     color: var(--text);
-    mix-blend-mode: difference;
+
 }
 
 /* style pour le lien de collaboration*/
@@ -952,7 +951,8 @@ object {
     @media only screen and (max-width: 575px) {
 
         .container-proj {
-            width: 95vw;
+            width: 90vw;
+            margin: auto;
 
         }
 
