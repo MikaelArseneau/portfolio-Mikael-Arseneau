@@ -745,6 +745,7 @@ object {
     object-fit: cover;
 }
 
+/* titre autre projet qui sera centrer avec une font outfit et un mix-blend-mode difference*/
 .autre {
     font-size: 1.6em;
 }
@@ -789,12 +790,14 @@ object {
     justify-content: center;
 }
 
+/* texte des logiciel dans la section detail projet*/
 .logiciel_pro {
     font-family: "outfit";
     font-size: 1.2em;
     font-weight: 500;
 }
 
+/* titre contact qui sera centrer avec une font outfit et un mix-blend-mode difference*/
 .titre_contact {
     font-size: 4em;
     text-transform: uppercase;
@@ -805,6 +808,7 @@ object {
     font-family: "inter", sans-serif;
 }
 
+/* bouton qui retourn a l'accueil*/
 .retour {
 
     padding: 1rem;
@@ -828,6 +832,7 @@ object {
 
 }
 
+/* classe pour les titre dans la page */
 .intro {
     font-size: 4em;
     text-transform: uppercase;
