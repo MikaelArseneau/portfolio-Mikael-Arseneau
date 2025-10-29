@@ -42,8 +42,8 @@
             }
         ],
         "collab": [
-            "Rafael Angon Dubé",
-            "Alexandre Gendron"
+            "Rafael Angon Dubé (Rédacteur en chef)",
+            "Alexandre Gendron (Désign et développement web)"
         ],
         "cadre": "Académique - Web 4"
     },
@@ -94,10 +94,10 @@
         "resultat": "Observer le résultat final - <br><a target='_blank' class='texte_apro' href='https://youtu.be/NqmFHKgiS5o'>Terminus</a>",
         "cadre": "Académique - Vidéo 2",
         "collab": [
-            "Justin Montpetit",
-            "Mathieu Willet",
-            "Alexandre Gendron",
-            "Sandrine Jean"
+            "Justin Montpetit - Acteur",
+            "Mathieu Willet - Réalisateur",
+            "Alexandre Gendron - Éclairage",
+            "Sandrine Jean - Cadreuse"
         ],
         "logiciels": [
             {
@@ -116,7 +116,7 @@
         "dossier": "chasseur.html",
         "introduction": "Jouer en tant qu'aventurier pris au piège dans un donjon. Il devra <span class='texte_apro'>survivre</span> aux nombreux ennemis qui cherchent à le vaincre et atteindre la sortie en vie.",
         "objectif": "Le joueur est amené à traverser un donjon rempli de crânes maléfiques. Il doit se diriger vers la sortie en se battant contre les hordes d'ennemis. Dans les différentes zones du jeu, le joueur devra <span class='texte_apro'>vaincre les crânes en les touchant avec son arme (ou ses poings)</span> et devra se défendre face à leur assaut (projectile de feu) en <span class='texte_apro'>bloquant ou en esquivant.</span>",
-        "role": "Programmeur",
+        "role": "Programmeur et level designer",
         "processus": "Observer le Github - <br><a target='_blank' class='texte_apro' href='https://github.com/AlexandreGendronCM/ProjetJeuVr_RealiteMixte.git'>Github</a>",
         "resultat": "Observer une vidéo du projet -<br><a target='_blank' class='texte_apro' href='https://youtu.be/T5DW5QJdduU'>Chasseur de crânes</a>",
         "logiciels": [
@@ -130,8 +130,8 @@
             }
         ],
         "collab": [
-            "Mathieu Willet",
-            "Alexandre Gendron"
+            "Mathieu Willet - programmation et testing",
+            "Alexandre Gendron - modélisation 3D et programmation"
         ],
         "cadre": "Académique - Réalité virtuelle"
     },
