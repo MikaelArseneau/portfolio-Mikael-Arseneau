@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.timeline({
         scrollTrigger: {
             trigger: "#role",
-            start: "top 50%",
+            start: "top 60%",
             toggleActions: "play none none reverse",
         }
     })
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.timeline({
         scrollTrigger: {
             trigger: "#processus2",
-            start: "top 50%",
+            start: "top 60%",
             toggleActions: "play none none reverse",
         }
     })
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.timeline({
         scrollTrigger: {
             trigger: "#processus",
-            start: "top 50%",
+            start: "top 60%",
             toggleActions: "play none none reverse",
 
         }
