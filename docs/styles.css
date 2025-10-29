@@ -31,6 +31,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "inter";
+
+}
+
+html,
+body {
     overflow-x: hidden;
 }
 
