@@ -1,4 +1,4 @@
-# Journail Ai
+# Journal Ai
 
 * const urlParams = new URLSearchParams(window.location.search); - permet la creation de la page projet
 * const projId = parseInt(urlParams.get('proj-id')); - permet la creation de la page projet
