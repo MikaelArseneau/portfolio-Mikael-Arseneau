@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: "#processus",
             start: "top 50%",
             toggleActions: "play none none reverse",
-            markers: true,
+
         }
     })
         .fromTo(processus,
