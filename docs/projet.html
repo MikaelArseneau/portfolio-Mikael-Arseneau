@@ -56,7 +56,7 @@
         </section>
         <!-- zone de descriptino du projet-->
         <section id="propos1" class="container my-5">
-            <h2 class=" ml-5 text-center impo">Introduction</h2>
+            <h2 class=" ml-5 text-center intro">Introduction</h2>
             <div class="mt-4 container-propos">
                 <p class="information" v-if="selectedProjet && selectedProjet.introduction"
                     v-html="selectedProjet.introduction"></p>
@@ -131,7 +131,7 @@
         <section id="resultat" class="container my-5" v-if="selectedProjet.resultat">
             <h2 class=" ml-5 impo_projet ">Résultat</h2>
             <div class="mt-4 ml-5 container-proj">
-                <p class=" mb-5" v-if="selectedProjet && selectedProjet.resultat" v-html="selectedProjet.resultat"></p>
+                <p class="" v-if="selectedProjet && selectedProjet.resultat" v-html="selectedProjet.resultat"></p>
 
             </div>
         </section>
