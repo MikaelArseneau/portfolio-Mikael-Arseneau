@@ -31,6 +31,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "inter";
+    overflow-x: hidden;
 }
 
 
@@ -826,6 +827,7 @@ object {
     width: object-fit;
 }
 
+/* au hover sur le bouton retour il change de couleur et le background devient la couleur secondaire*/
 .retour:hover {
     background-color: var(--secondary);
     color: var(--text);
@@ -872,7 +874,7 @@ object {
 }
 
 
-
+/* responsive design pour les differentes tailles d'ecran*/
 @media only screen and (max-width: 1000px) {
 
     .titre {
@@ -911,6 +913,7 @@ object {
     }
 }
 
+/* responsive design pour les differentes tailles d'ecran*/
 @media only screen and (max-width: 700px) {
 
     .display_categories {
@@ -964,7 +967,7 @@ object {
 }
 
 
-
+/* responsive design pour les differentes tailles d'ecran*/
 @media only screen and (max-width: 800px) {
 
     .information_logiciels {
@@ -984,6 +987,7 @@ object {
     }
 }
 
+/* responsive design pour les differentes tailles d'ecran*/
 @media only screen and (max-width: 575px) {
 
     .container-proj {
@@ -1003,6 +1007,7 @@ object {
 
     }
 
+    /* responsive design pour les differentes tailles d'ecran*/
     @media only screen and (max-width: 575px) {
 
         .categorie {
