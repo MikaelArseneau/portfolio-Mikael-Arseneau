@@ -225,6 +225,7 @@ main {
     margin-top: 11em;
     height: auto;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* titre pour la section projet sur téléhpne */
