@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { y: -20, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
         );
-
+    // Section Processus
     const processus = document.querySelector("#processus");
     gsap.timeline({
         scrollTrigger: {
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     const main_index = document.querySelector(".main_index");
     const main_projet = document.querySelector(".main_projet");
-
+    //animation du background de la page principale
     gsap.timeline({
         scrollTrigger: {
             trigger: "#projects",
@@ -197,18 +197,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         }
-    })
+    })//animation du background et effet de brightness
         .fromTo(main_index,
             { background: "linear-gradient(to right, #0f172a, #334155)", ease: "power2.inOut" },
             { background: "#E5E5E5", duration: 0.8, ease: "power2.inOut" }
-        )
+        )//animation du background et effet de brightness
         .fromTo(main_index,
             { filter: "brightness(1)", ease: "power2.inOut" },
             { filter: "brightness(0.95)", duration: 0.4, yoyo: true, repeat: 1, ease: "power1.inOut" },
             "-=0.3"
         );
 
-
+    // Animation du nom dans la section titre
     let tlnom = gsap.timeline({
         scrollTrigger: {
             trigger: "#title",
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { y: 180, duration: 0.5, ease: "power2.inOut" }, 0
         );
 
-
+    // Section Logiciels dans la page projet
     const logiciel_projet = document.querySelectorAll(".logiciel_projet");
     gsap.timeline({
         scrollTrigger: {
@@ -256,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { z: 20, opacity: 0, color: "#ed6a5a" },
             { z: 0, opacity: 1, duration: 0.5, stagger: 0.2, ease: "power2.out", color: "#E5E5E5" }
         )
+    // Section À propos
     const propos = document.querySelectorAll(".propos");
     gsap.timeline({
         scrollTrigger: {

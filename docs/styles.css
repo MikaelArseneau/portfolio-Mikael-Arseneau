@@ -299,6 +299,7 @@ main {
     flex-direction: row;
 }
 
+/* animation de fade pour les projets qui vont apparaitre et disparaitre*/
 .fade-enter-active,
 .fade-leave-active {
     transition: all 0.5s ease-in-out;
@@ -589,6 +590,7 @@ svg:hover {
 
 }
 
+/* menu de navigation dans le detail du projet en display flex en row avec un gap de 1rem et centrer les info*/
 .flex-menu {
     display: flex;
     flex-direction: row;
@@ -619,6 +621,7 @@ svg:hover {
 
 }
 
+/* classe pour les titre dans la page */
 .impo_projet {
     font-size: 3em;
     text-transform: uppercase;
