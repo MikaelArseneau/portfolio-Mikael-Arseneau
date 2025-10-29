@@ -60,9 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: "#logiciel",
+            trigger: "#titre_logi",
             start: "top 70%",
             toggleActions: "play none none none",
+            markers: true,
+
 
         }
     });
