@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <!-- SEO -->
+  <meta name="description" content="Portfolio de Mikael Arseneau">
+  <meta name="keywords" content="Mikael Arseneau">
+  <meta name="author" content="Mikael Arseneau">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
@@ -108,7 +112,7 @@
             <transition-group name="fade" tag="div" class="all-projet">
               <a v-for="project in projects" :key="project.id" :href="'projet.html?proj-id=' + project.id"
                 v-show="activeCat === 'tous' || activeCat === project.categorie" class="card text-bg-dark web">
-                <img :src="project.images" class="card-img" alt="...">
+                <img :src="project.images" class="card-img" alt="image des projets">
                 <div class="card-img-overlay">
                   <h5 class="card-title text-center">{{ project.title }}</h5>
                 </div>
