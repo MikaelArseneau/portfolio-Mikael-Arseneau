@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const processus2 = document.querySelector("#processus2");
     gsap.timeline({
         scrollTrigger: {
-            trigger: "#processus2", // ✅ même casse
+            trigger: "#processus2",
             start: "top 50%",
             toggleActions: "play none none reverse",
         }
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const processus = document.querySelector("#processus");
     gsap.timeline({
         scrollTrigger: {
-            trigger: "#processus", // ✅ même casse
+            trigger: "#processus",
             start: "top 50%",
             toggleActions: "play none none reverse",
             markers: true,
