@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mounted() {
             const urlParams = new URLSearchParams(window.location.search);
             const projId = parseInt(urlParams.get('proj-id'));
-
+            //fetch des projets
             fetch("./project.json")
                 .then(response => response.json())
                 .then(data => {
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.selectedProjet = this.projects.find(p => p.id === projId);
                     console.log(this.selectedProjet);
                 })
+                //erreur de fetch
                 .catch(error => console.error('Erreur de chargement des projets:', error));
         },
         methods: {
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const int_titre = document.querySelector("#interet_titre");
     const logi_titre = document.querySelector("#titre_logi");
 
-
+    //timeline gsap avec scrolltrigger
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#titre_logi",
@@ -125,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { y: -20, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
         )
+    // Section Rôle
     const role = document.querySelector("#role");
     gsap.timeline({
         scrollTrigger: {
@@ -137,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { y: -20, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
         )
+    // Section Processus 2
     const processus2 = document.querySelector("#processus2");
     gsap.timeline({
         scrollTrigger: {
@@ -243,6 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { y: 20, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.5, stagger: 0.5, ease: "power2.out" }
         )
+    // Section Collaboration
     const collab = document.querySelectorAll(".collab");
     gsap.timeline({
         scrollTrigger: {

@@ -67,10 +67,12 @@ nav .navbar-brand {
     letter-spacing: 0.1rem;
 }
 
+/* au hover sur le brand il change de couleur*/
 nav .navbar-brand:hover {
     color: var(--text);
 }
 
+/* style pour les lien de navigation dans le header*/
 nav .nav-link {
     color: var(--background);
     font-size: 1.2rem;
@@ -81,10 +83,12 @@ nav .nav-link {
     letter-spacing: 0.1rem;
 }
 
+/* au hover sur les lien de navigation il change de couleur*/
 nav .nav-link:hover {
     color: var(--secondary);
 }
 
+/* style pour le header qui prendra toute la largeur en haut de page avec un background couleur primaire*/
 nav {
     background-color: #D9CCB6;
     position: sticky;
@@ -93,6 +97,7 @@ nav {
     z-index: 100;
 }
 
+/* style pour le bouton de menu sur téléphone*/
 nav .navbar-toggler {
     border: none;
     color: var(--background);
@@ -745,6 +750,7 @@ a.texte_apro {
     font-size: 1.5em;
 }
 
+/* container pour la section autre projet*/
 .projet-container {
     margin-top: 8em;
     margin-bottom: 5em;
