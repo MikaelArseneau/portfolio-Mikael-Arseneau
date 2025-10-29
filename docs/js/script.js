@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.timeline({
         scrollTrigger: {
             trigger: "#projects",
-            start: "top 20%",
+            start: "top 40%",
             toggleActions: "play none none reverse",
 
         }
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         )
         .fromTo(cat,
             { x: 20, opacity: 0 },
-            { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, // commence légèrement avant la fin de l'animation du titre
+            { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" },
         );
     const main_index = document.querySelector(".main_index");
     const main_projet = document.querySelector(".main_projet");
