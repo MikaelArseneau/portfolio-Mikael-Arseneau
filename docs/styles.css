@@ -112,7 +112,9 @@ main {
     top: 0;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
 }
+
 
 h1 {
     margin: 0;
@@ -1045,6 +1047,47 @@ object {
     } */
 }
 
+@media only screen and (max-width: 600px) {
+
+    .prenom,
+    .nom {
+        font-size: calc(1.6rem * 1.618 * 1.618);
+        font-family: "inter";
+        font-weight: 700;
+        display: inline-block;
+        letter-spacing: 2px;
+    }
+
+    /* info au-dessus le nom qui est aligner a gauche*/
+    .info {
+
+        /* ≈ 1.618rem */
+        font-size: 0.8rem;
+        text-align: left;
+        color: var(--text);
+        color: var(--secondary);
+        font-family: "inter";
+        margin-bottom: 1rem;
+        font-weight: 200;
+    }
+
+    .portfolio {
+        font-weight: 300;
+        font-size: calc(0.8rem * 1.618);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-family: "inter";
+    }
+
+    .propos {
+        font-size: 3rem;
+        color: var(--text);
+        font-family: "inter", sans-serif;
+        font-weight: 700;
+    }
+}
+
+
 /* responsive design pour les differentes tailles d'ecran*/
 @media only screen and (max-width: 575px) {
 
@@ -1058,12 +1101,14 @@ object {
         width: 100%
     }
 
-    /* .prenom,
-    .nom {
-        font-size: 4rem;
-        letter-spacing: 0.01rem;
+    nav .nav-link {
 
-    } */
+        font-size: 0.8rem;
+    }
+
+    nav {
+        gap: 2rem;
+    }
 
     /* responsive design pour les differentes tailles d'ecran*/
     @media only screen and (max-width: 575px) {

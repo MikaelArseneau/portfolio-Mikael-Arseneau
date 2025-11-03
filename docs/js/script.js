@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" },
         );
     const main_index = document.querySelector(".main_index");
-    const main_projet = document.querySelector(".main_projet");
+
     const nav = document.querySelector("nav");
     //animation du background de la page principale
     gsap.timeline({
@@ -215,6 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
             { filter: "brightness(0.95)", duration: 0.4, yoyo: true, repeat: 1, ease: "power1.inOut" },
             "-=0.3"
         );
+
+
+
 
     // Animation du nom dans la section titre
 
@@ -246,11 +249,11 @@ document.addEventListener('DOMContentLoaded', () => {
             scrub: 2,
         }
     });
-    console.log(document.querySelectorAll(".prenom")); // doit afficher ton span
+    console.log(document.querySelectorAll(".prenom"));
 
 
     tlnom.fromTo(prenom,
-        { y: 0, rotate: 0, scale: 1 }, // au début droit et normal
+        { y: 0, rotate: 0, scale: 1 },
         {
             y: 50, duration: 0.6, ease: "power2.inOut",
         }, 0
