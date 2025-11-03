@@ -1045,6 +1045,10 @@ object {
         letter-spacing: 0.01rem;
 
     } */
+    .titre_projet {
+        font-size: calc(2.8rem * 1.618);
+        letter-spacing: 4px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
