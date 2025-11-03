@@ -90,7 +90,7 @@
         ],
         "role": "Directeur photo",
         "objectif": "Notre objectif était de démontrer les effets néfastes de l'alcool au volant à travers des <span class='texte_apro'>plans rapprochés,</span> en faisant progresser l'histoire grâce aux <span class='texte_apro'>gros plans sur le personnage</span> et au <span class='texte_apro'>travail sonore.</span> La plupart du projet a d'ailleurs été <span class='texte_apro'>filmée en macro</span> afin d'accentuer l'immersion et la tension.",
-        "introduction": "Terminus est un court métrage que nous avons réalisé dans le cadre d'un projet de sensibilisation aux dangers de <span class='texte_apro'>l'alcool au volant.</span> Le film combine des prises de vue en <span class='texte_apro'>caméra normale</span> et en <span class='texte_apro'>macro</span> afin de créer une ambiance immersive et expressive",
+        "introduction": "Terminus est un court métrage que nous avons réalisé dans le cadre d'un projet de sensibilisation aux dangers de <span class='texte_apro'>l'alcool au volant.</span> Le film combine des prises de vue en <span class='texte_apro'>caméra normale</span> et en <span class='texte_apro'>macro</span> afin de créer une ambiance immersive et expressive.",
         "resultat": "Observer le résultat final - <br><a target='_blank' class='texte_apro' href='https://youtu.be/NqmFHKgiS5o'>Terminus</a>",
         "cadre": "Académique - Vidéo 2",
         "collab": [
@@ -145,7 +145,7 @@
         "role": "Directeur du projet",
         "resultat": "<p><span class='texte_apro'>Pas encore disponible</span></p>",
         "objectif": "Créer une expérience immersive qui capture les émotions et les défis d'une <span class='texte_apro'>ascension en montagne,</span> en utilisant des techniques de narration visuelle et sonore pour immerger le spectateur dans le voyage.",
-        "introduction": "La Montée est un projet interactif combinant <span class='texte_apro'>Max, TouchDesigner, Maya et Reaper.</span> L’œuvre permet à l’interacteur de toucher un <span class='texte_apro'>clavier MIDI</span>, de <span class='texte_apro'>bouger ses mains</span> ou de <span class='texte_apro'>parler</span> dans un micro, influençant ainsi en temps réel l'expérience visuelle et sonore devant lui",
+        "introduction": "La Montée est un projet interactif combinant <span class='texte_apro'>Max, TouchDesigner, Maya et Reaper.</span> L’œuvre permet à l’interacteur de toucher un <span class='texte_apro'>clavier MIDI</span>, de <span class='texte_apro'>bouger ses mains</span> ou de <span class='texte_apro'>parler</span> dans un micro, influençant ainsi en temps réel l'expérience visuelle et sonore devant lui.",
         "logiciels": [
             {
                 "name": "Maya",

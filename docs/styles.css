@@ -1067,7 +1067,7 @@ object {
     .info {
 
         /* ≈ 1.618rem */
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: left;
         color: var(--text);
         color: var(--secondary);
@@ -1078,7 +1078,7 @@ object {
 
     .portfolio {
         font-weight: 300;
-        font-size: calc(1rem * 1.618);
+        font-size: calc(2rem * 1.618);
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-family: "inter";
