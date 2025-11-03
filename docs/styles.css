@@ -40,6 +40,10 @@ body {
     overflow-x: hidden;
 }
 
+#projects {
+    /* Marge ajoutée pour empêcher l'élément de se cacher derrière le header fixe */
+    scroll-margin-top: 100px;
+}
 
 /* mettre un boule qui suit le mouvement de la souris a travers le projet*/
 .cursor {
@@ -59,56 +63,43 @@ body {
 
 
 /* header */
-nav .navbar-brand {
-    color: var(--secondary);
-    font-size: 1rem;
-    font-family: "outfit";
-    font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-}
 
 /* au hover sur le brand il change de couleur*/
-nav .navbar-brand:hover {
-    color: var(--text);
-}
-
 /* style pour les lien de navigation dans le header*/
 nav .nav-link {
-    color: var(--background);
+    padding: 0.4rem;
+    color: #D9D9D9;
     font-size: 1.2rem;
-    margin: 0 1rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-family: "inter";
-    font-weight: bolder;
+    font-weight: 900;
     letter-spacing: 0.1rem;
+    transition: 0.5s all ease-in-out;
+    padding: auto;
 }
 
 /* au hover sur les lien de navigation il change de couleur*/
 nav .nav-link:hover {
     color: var(--secondary);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
 }
 
 /* style pour le header qui prendra toute la largeur en haut de page avec un background couleur primaire*/
 nav {
-    background-color: #D9CCB6;
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    align-items: center;
 }
 
-/* style pour le bouton de menu sur téléphone*/
-nav .navbar-toggler {
-    border: none;
-    color: var(--background);
-    background-color: var(--secondary);
-}
 
-nav .navbar-toggler:focus {
-    box-shadow: none;
-    background-color: var(--secondary);
-}
 
 /* fin du header */
 
@@ -123,46 +114,66 @@ main {
     position: absolute;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 /* section acceuil qui est un display flex en column qui prend toute la hauteur de la page */
 .accueil-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    gap: 1rem 1rem;
+    gap: 0px;
     justify-content: center;
     width: 100%;
     margin: auto;
     align-items: left;
-
 }
 
 /* affiche du nom qui s'affiche a gauche  qui a un petit text-shadow*/
 .titre {
-    font-size: 11rem;
-    text-align: left;
+    font-size: calc(1rem * 1.618 * 1.618);
+    letter-spacing: 8px;
     color: var(--text);
-    text-shadow: 3px 3px 3px var(--background);
-    font-weight: 700;
-    margin-bottom: 1rem;
-    letter-spacing: -8px;
+    font-family: "inter", sans-serif;
+}
+
+.titre_projet {
+    font-size: calc(3rem * 1.618 * 1.618);
+
+    color: var(--text);
+    font-family: "inter", sans-serif;
 }
 
 /* fin du header */
 .prenom,
 .nom {
-    font-size: 11rem;
-    display: inline-block;
+    font-size: calc(3rem * 1.618 * 1.618);
     font-family: "inter";
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 2px;
 }
 
 /* info au-dessus le nom qui est aligner a gauche*/
 .info {
-    font-size: 1.5rem;
+
+    /* ≈ 1.618rem */
+    font-size: 2rem;
     text-align: left;
     color: var(--text);
-    align-self: flex-start;
     color: var(--secondary);
-    margin-bottom: 2rem;
+    font-family: "inter";
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+.portfolio {
+    font-weight: 300;
+    font-size: calc(2rem * 1.618);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     font-family: "inter";
 }
 
@@ -187,7 +198,8 @@ main {
 .propos {
     font-size: 5rem;
     color: var(--text);
-    font-family: "outfit";
+    font-family: "inter", sans-serif;
+    font-weight: 700;
 }
 
 /* section a propos qui sera animer avec gsap, elle sera centrer. Elle affiche un petite descirption de moi*/
@@ -222,6 +234,7 @@ main {
     background-color: var(--text);
     color: #0f172a;
     mix-blend-mode: difference;
+    font-weight: 600;
 }
 
 
@@ -238,12 +251,14 @@ main {
     display: none;
     font-size: 4rem;
     color: var(--background);
+    font-weight: 700;
 }
 
 /* titre pour la section projet sur pc */
 .pc_project {
     font-size: 4rem;
     color: var(--background);
+    font-weight: 700;
 }
 
 /* classe qui va etre ajouter au mot special dans le html*/
@@ -265,7 +280,7 @@ main {
 .categorie {
     text-transform: capitalize;
     font-family: "inter";
-    font-weight: bolder;
+    font-weight: 800;
     letter-spacing: 0.1rem;
     transition: 1s all ease;
     font-size: 1.3rem;
@@ -275,6 +290,7 @@ main {
     color: var(--background);
     justify-content: flex-end;
     flex-direction: column;
+
 
 }
 
@@ -418,6 +434,36 @@ main {
 
 }
 
+#titre_logi {
+    text-transform: uppercase;
+    color: var(--text);
+    mix-blend-mode: difference;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+}
+
+#interet_titre {
+    text-transform: uppercase;
+    color: var(--text);
+    mix-blend-mode: difference;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+}
+
+.titre_contact {
+    text-transform: uppercase;
+    color: var(--text);
+    mix-blend-mode: difference;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+}
+
 /* display flex pour afficher les logiciel en ligne avec un gap de 2em et centrer les logiciel*/
 .display_logiciel {
     display: flex;
@@ -445,10 +491,11 @@ main {
     flex-direction: column;
     align-items: center;
     font-family: "inter";
-    font-weight: thin;
+    font-weight: 700;
     transition: 0.5s all ease-in-out;
     mix-blend-mode: difference;
     letter-spacing: 0.03em;
+
 }
 
 /* logo des logiciel avec une taille de 64px par 64px et un object-fit contain pour garder les proportions*/
@@ -539,6 +586,7 @@ main {
     color: var(--text);
     text-align: center;
     mix-blend-mode: difference;
+    font-weight: 400;
 }
 
 
@@ -551,8 +599,8 @@ main {
 
 /* footer qui prendra toute la largeur en bas de page avec un background couleur primaire et du texte centrer*/
 footer {
-    background-color: #D9CCB6;
-    color: var(--background);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--text);
     text-align: center;
     padding: 1rem;
     position: relative;
@@ -561,7 +609,8 @@ footer {
     margin-top: 2rem;
     font-size: 1em;
     font-family: "inter";
-    font-weight: 400;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
 }
 
 /* container pour les icone du footer en display flex avec un gap de 3em et centrer les icones*/
@@ -893,13 +942,6 @@ object {
 /* responsive design pour les differentes tailles d'ecran*/
 @media only screen and (max-width: 1000px) {
 
-    .titre {
-        font-size: 6rem;
-    }
-
-    .info {
-        font-size: 1.2rem;
-    }
 
     .display_categories {
         font-size: 0.6em;
@@ -922,11 +964,11 @@ object {
         margin-top: 0;
     }
 
-    .prenom,
+    /* .prenom,
     .nom {
         font-size: 10rem;
 
-    }
+    } */
 }
 
 /* responsive design pour les differentes tailles d'ecran*/
@@ -975,11 +1017,11 @@ object {
         cursor: pointer;
     }
 
-    .prenom,
+    /* .prenom,
     .nom {
         font-size: 10rem;
 
-    }
+    } */
 }
 
 
@@ -995,12 +1037,12 @@ object {
         display: block;
     }
 
-    .prenom,
+    /* .prenom,
     .nom {
         font-size: 6.5rem;
         letter-spacing: 0.01rem;
 
-    }
+    } */
 }
 
 /* responsive design pour les differentes tailles d'ecran*/
@@ -1016,12 +1058,12 @@ object {
         width: 100%
     }
 
-    .prenom,
+    /* .prenom,
     .nom {
         font-size: 4rem;
         letter-spacing: 0.01rem;
 
-    }
+    } */
 
     /* responsive design pour les differentes tailles d'ecran*/
     @media only screen and (max-width: 575px) {

@@ -191,6 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     const main_index = document.querySelector(".main_index");
     const main_projet = document.querySelector(".main_projet");
+    const nav = document.querySelector("nav");
     //animation du background de la page principale
     gsap.timeline({
         scrollTrigger: {
@@ -204,7 +205,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .fromTo(main_index,
             { background: "linear-gradient(to right, #0f172a, #334155)", ease: "power2.inOut" },
             { background: "#E5E5E5", duration: 0.8, ease: "power2.inOut" }
+
         )//animation du background et effet de brightness
+        .to(nav,
+            { background: "rgba(0, 0, 0, 0.9)" }, 0
+        )
         .fromTo(main_index,
             { filter: "brightness(1)", ease: "power2.inOut" },
             { filter: "brightness(0.95)", duration: 0.4, yoyo: true, repeat: 1, ease: "power1.inOut" },
@@ -212,23 +217,47 @@ document.addEventListener('DOMContentLoaded', () => {
         );
 
     // Animation du nom dans la section titre
+
+    const prenom = document.querySelector(".prenom");
+    const nom = document.querySelector(".nom");
+    const titre = document.querySelector("#titre_projet");
+
+    window.addEventListener("load", () => {
+        const tlnom = gsap.timeline({ defaults: { duration: 0.8, ease: "back.out(1.7)" } });
+
+        tlnom.from(".portfolio", { y: -20, opacity: 0 }, "=0.5s");
+
+        tlnom.from(".info", { y: -50, opacity: 0 }, "-=0.4");
+
+        tlnom.from(".prenom", { y: -50, opacity: 0 }, "-=0.2");
+
+        tlnom.from(".nom", { x: -50, opacity: 0 }, "-=0.4");
+    });
+
+
+
+
+
     let tlnom = gsap.timeline({
         scrollTrigger: {
             trigger: "#title",
             start: "top 60%",
             toggleActions: "play none none reverse",
-            scrub: 2
+            scrub: 2,
         }
     });
+    console.log(document.querySelectorAll(".prenom")); // doit afficher ton span
 
 
-    tlnom.fromTo(".prenom",
+    tlnom.fromTo(prenom,
         { y: 0, rotate: 0, scale: 1 }, // au début droit et normal
-        { y: 100, duration: 0.6, ease: "power2.inOut" }, 0
+        {
+            y: 50, duration: 0.6, ease: "power2.inOut",
+        }, 0
     )
-        .fromTo(".nom",
+        .fromTo(nom,
             { y: 0, rotate: 0, scale: 1 }, // idem
-            { y: 180, duration: 0.5, ease: "power2.inOut" }, 0
+            { y: 100, duration: 0.5, ease: "power2.inOut" }, 0
         );
 
     // Section Logiciels dans la page projet
