@@ -214,6 +214,7 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 1em;
 }
 
 /* texte qui va etre dans la section a propos*/
@@ -1055,7 +1056,7 @@ object {
 
     .prenom,
     .nom {
-        font-size: calc(1.6rem * 1.618 * 1.618);
+        font-size: calc(1.9rem * 1.618 * 1.618);
         font-family: "inter";
         font-weight: 700;
         display: inline-block;
@@ -1066,7 +1067,7 @@ object {
     .info {
 
         /* ≈ 1.618rem */
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: left;
         color: var(--text);
         color: var(--secondary);
@@ -1077,7 +1078,7 @@ object {
 
     .portfolio {
         font-weight: 300;
-        font-size: calc(0.8rem * 1.618);
+        font-size: calc(1rem * 1.618);
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-family: "inter";
